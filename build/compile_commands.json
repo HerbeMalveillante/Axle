@@ -1,0 +1,182 @@
+[
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/external/glad/src/glad.c.o -c /Users/herbemalveillante/Code/Axle/external/glad/src/glad.c",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glad/src/glad.c",
+  "output": "CMakeFiles/Axle.dir/external/glad/src/glad.c.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/src/main.cpp.o -c /Users/herbemalveillante/Code/Axle/src/main.cpp",
+  "file": "/Users/herbemalveillante/Code/Axle/src/main.cpp",
+  "output": "CMakeFiles/Axle.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/src/Core/App.cpp.o -c /Users/herbemalveillante/Code/Axle/src/Core/App.cpp",
+  "file": "/Users/herbemalveillante/Code/Axle/src/Core/App.cpp",
+  "output": "CMakeFiles/Axle.dir/src/Core/App.cpp.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/src/math/Vector2.cpp.o -c /Users/herbemalveillante/Code/Axle/src/math/Vector2.cpp",
+  "file": "/Users/herbemalveillante/Code/Axle/src/math/Vector2.cpp",
+  "output": "CMakeFiles/Axle.dir/src/math/Vector2.cpp.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/src/math/Point2.cpp.o -c /Users/herbemalveillante/Code/Axle/src/math/Point2.cpp",
+  "file": "/Users/herbemalveillante/Code/Axle/src/math/Point2.cpp",
+  "output": "CMakeFiles/Axle.dir/src/math/Point2.cpp.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/src/math/Size2.cpp.o -c /Users/herbemalveillante/Code/Axle/src/math/Size2.cpp",
+  "file": "/Users/herbemalveillante/Code/Axle/src/math/Size2.cpp",
+  "output": "CMakeFiles/Axle.dir/src/math/Size2.cpp.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/src/math/Matrix4.cpp.o -c /Users/herbemalveillante/Code/Axle/src/math/Matrix4.cpp",
+  "file": "/Users/herbemalveillante/Code/Axle/src/math/Matrix4.cpp",
+  "output": "CMakeFiles/Axle.dir/src/math/Matrix4.cpp.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/src/Input/Keyboard.cpp.o -c /Users/herbemalveillante/Code/Axle/src/Input/Keyboard.cpp",
+  "file": "/Users/herbemalveillante/Code/Axle/src/Input/Keyboard.cpp",
+  "output": "CMakeFiles/Axle.dir/src/Input/Keyboard.cpp.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/src/Input/Mouse.cpp.o -c /Users/herbemalveillante/Code/Axle/src/Input/Mouse.cpp",
+  "file": "/Users/herbemalveillante/Code/Axle/src/Input/Mouse.cpp",
+  "output": "CMakeFiles/Axle.dir/src/Input/Mouse.cpp.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/context.c.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/context.c",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/context.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/context.c.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/init.c.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/init.c",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/init.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/init.c.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/input.c.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/input.c",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/input.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/input.c.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/monitor.c.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/monitor.c",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/monitor.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/platform.c.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/platform.c",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/platform.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/platform.c.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/vulkan.c.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/vulkan.c",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/vulkan.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/window.c.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/window.c",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/window.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/window.c.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/egl_context.c.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/egl_context.c",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/egl_context.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/osmesa_context.c",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/osmesa_context.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/null_init.c.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/null_init.c",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/null_init.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_init.c.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/null_monitor.c.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/null_monitor.c",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/null_monitor.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/null_window.c.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/null_window.c",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/null_window.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_window.c.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/null_joystick.c.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/null_joystick.c",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/null_joystick.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_time.c.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/cocoa_time.c",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/cocoa_time.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/posix_module.c.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/posix_module.c",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/posix_module.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/posix_thread.c.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/posix_thread.c",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/posix_thread.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/clang -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -x objective-c -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_init.m.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/cocoa_init.m",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/cocoa_init.m",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/clang -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -x objective-c -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_joystick.m.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/cocoa_joystick.m",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/cocoa_joystick.m",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/clang -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -x objective-c -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_monitor.m.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/cocoa_monitor.m",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/cocoa_monitor.m",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/clang -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -x objective-c -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_window.m.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/cocoa_window.m",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/cocoa_window.m",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o"
+},
+{
+  "directory": "/Users/herbemalveillante/Code/Axle/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/clang -D_GLFW_COCOA -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glfw/src -I/Users/herbemalveillante/Code/Axle/build/external/glfw/src -x objective-c -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/nsgl_context.m.o -c /Users/herbemalveillante/Code/Axle/external/glfw/src/nsgl_context.m",
+  "file": "/Users/herbemalveillante/Code/Axle/external/glfw/src/nsgl_context.m",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o"
+}
+]
