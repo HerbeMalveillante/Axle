@@ -274,54 +274,6 @@ src/Core/App.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Core/App.cpp.s
 .PHONY : src/Core/App.cpp.s
 
-src/Input/Keyboard.o: src/Input/Keyboard.cpp.o
-.PHONY : src/Input/Keyboard.o
-
-# target to build an object file
-src/Input/Keyboard.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Input/Keyboard.cpp.o
-.PHONY : src/Input/Keyboard.cpp.o
-
-src/Input/Keyboard.i: src/Input/Keyboard.cpp.i
-.PHONY : src/Input/Keyboard.i
-
-# target to preprocess a source file
-src/Input/Keyboard.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Input/Keyboard.cpp.i
-.PHONY : src/Input/Keyboard.cpp.i
-
-src/Input/Keyboard.s: src/Input/Keyboard.cpp.s
-.PHONY : src/Input/Keyboard.s
-
-# target to generate assembly for a file
-src/Input/Keyboard.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Input/Keyboard.cpp.s
-.PHONY : src/Input/Keyboard.cpp.s
-
-src/Input/Mouse.o: src/Input/Mouse.cpp.o
-.PHONY : src/Input/Mouse.o
-
-# target to build an object file
-src/Input/Mouse.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Input/Mouse.cpp.o
-.PHONY : src/Input/Mouse.cpp.o
-
-src/Input/Mouse.i: src/Input/Mouse.cpp.i
-.PHONY : src/Input/Mouse.i
-
-# target to preprocess a source file
-src/Input/Mouse.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Input/Mouse.cpp.i
-.PHONY : src/Input/Mouse.cpp.i
-
-src/Input/Mouse.s: src/Input/Mouse.cpp.s
-.PHONY : src/Input/Mouse.s
-
-# target to generate assembly for a file
-src/Input/Mouse.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Input/Mouse.cpp.s
-.PHONY : src/Input/Mouse.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -346,102 +298,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/math/Matrix4.o: src/math/Matrix4.cpp.o
-.PHONY : src/math/Matrix4.o
-
-# target to build an object file
-src/math/Matrix4.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/math/Matrix4.cpp.o
-.PHONY : src/math/Matrix4.cpp.o
-
-src/math/Matrix4.i: src/math/Matrix4.cpp.i
-.PHONY : src/math/Matrix4.i
-
-# target to preprocess a source file
-src/math/Matrix4.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/math/Matrix4.cpp.i
-.PHONY : src/math/Matrix4.cpp.i
-
-src/math/Matrix4.s: src/math/Matrix4.cpp.s
-.PHONY : src/math/Matrix4.s
-
-# target to generate assembly for a file
-src/math/Matrix4.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/math/Matrix4.cpp.s
-.PHONY : src/math/Matrix4.cpp.s
-
-src/math/Point2.o: src/math/Point2.cpp.o
-.PHONY : src/math/Point2.o
-
-# target to build an object file
-src/math/Point2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/math/Point2.cpp.o
-.PHONY : src/math/Point2.cpp.o
-
-src/math/Point2.i: src/math/Point2.cpp.i
-.PHONY : src/math/Point2.i
-
-# target to preprocess a source file
-src/math/Point2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/math/Point2.cpp.i
-.PHONY : src/math/Point2.cpp.i
-
-src/math/Point2.s: src/math/Point2.cpp.s
-.PHONY : src/math/Point2.s
-
-# target to generate assembly for a file
-src/math/Point2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/math/Point2.cpp.s
-.PHONY : src/math/Point2.cpp.s
-
-src/math/Size2.o: src/math/Size2.cpp.o
-.PHONY : src/math/Size2.o
-
-# target to build an object file
-src/math/Size2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/math/Size2.cpp.o
-.PHONY : src/math/Size2.cpp.o
-
-src/math/Size2.i: src/math/Size2.cpp.i
-.PHONY : src/math/Size2.i
-
-# target to preprocess a source file
-src/math/Size2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/math/Size2.cpp.i
-.PHONY : src/math/Size2.cpp.i
-
-src/math/Size2.s: src/math/Size2.cpp.s
-.PHONY : src/math/Size2.s
-
-# target to generate assembly for a file
-src/math/Size2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/math/Size2.cpp.s
-.PHONY : src/math/Size2.cpp.s
-
-src/math/Vector2.o: src/math/Vector2.cpp.o
-.PHONY : src/math/Vector2.o
-
-# target to build an object file
-src/math/Vector2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/math/Vector2.cpp.o
-.PHONY : src/math/Vector2.cpp.o
-
-src/math/Vector2.i: src/math/Vector2.cpp.i
-.PHONY : src/math/Vector2.i
-
-# target to preprocess a source file
-src/math/Vector2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/math/Vector2.cpp.i
-.PHONY : src/math/Vector2.cpp.i
-
-src/math/Vector2.s: src/math/Vector2.cpp.s
-.PHONY : src/math/Vector2.s
-
-# target to generate assembly for a file
-src/math/Vector2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/math/Vector2.cpp.s
-.PHONY : src/math/Vector2.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -465,27 +321,9 @@ help:
 	@echo "... src/Core/App.o"
 	@echo "... src/Core/App.i"
 	@echo "... src/Core/App.s"
-	@echo "... src/Input/Keyboard.o"
-	@echo "... src/Input/Keyboard.i"
-	@echo "... src/Input/Keyboard.s"
-	@echo "... src/Input/Mouse.o"
-	@echo "... src/Input/Mouse.i"
-	@echo "... src/Input/Mouse.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/math/Matrix4.o"
-	@echo "... src/math/Matrix4.i"
-	@echo "... src/math/Matrix4.s"
-	@echo "... src/math/Point2.o"
-	@echo "... src/math/Point2.i"
-	@echo "... src/math/Point2.s"
-	@echo "... src/math/Size2.o"
-	@echo "... src/math/Size2.i"
-	@echo "... src/math/Size2.s"
-	@echo "... src/math/Vector2.o"
-	@echo "... src/math/Vector2.i"
-	@echo "... src/math/Vector2.s"
 .PHONY : help
 
 

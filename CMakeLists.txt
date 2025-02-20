@@ -14,14 +14,8 @@ add_subdirectory(external/glfw)
 include_directories(external/glad/include)
 
 add_executable(Axle external/glad/src/glad.c
-        src/main.cpp
         src/Core/App.cpp
-        src/math/Vector2.cpp
-        src/math/Point2.cpp
-        src/math/Size2.cpp
-        src/math/Matrix4.cpp
-        src/Input/Keyboard.cpp
-        src/Input/Mouse.cpp
+        src/main.cpp
 )
 
 target_link_libraries(Axle PRIVATE glfw)

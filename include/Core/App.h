@@ -3,40 +3,37 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 
+#define GLFW_INCLUDE_NONE
+#include "GLFW/glfw3.h"
 #include <string>
-#include "Math/Vector2.h"
-#include "Math/Point2.h"
-#include "Math/Size2.h"
-#include "Math/Matrix4.h"
-#include "Input/Keyboard.h"
 
-namespace Axle::Core{
+namespace Axle::Core {
+class App {
 
-    class App{
+private:
+  static unsigned int width;
+  static unsigned int height;
+  static std::string title;
+  static bool isReady;
 
-    private:
-        std::string title;
-        Math::Size2 screenSize;
-        Input::Keyboard keyboard;
+  // Framebuffer size callback function
+  static void framebuffer_size_callback(GLFWwindow *window, int width,
+                                        int height);
 
+public:
+  static GLFWwindow *window;
+  // Input processing function
+  static void processInput();
+  static void Init(unsigned int width, unsigned int height, std::string title);
+  static bool ShouldClose();
+  static void SwapBuffers();
+  static void PollEvents();
+  static void Exit();
 
-        bool eventWaiting;
-        Math::Matrix4 screenScale;
+  // We don't want the window to be instantiated
+  App() = delete;
+};
 
-    public:
-        App(Math::Size2 size, const std::string &title);
+} // namespace Axle::Core
 
-
-
-
-
-
-
-
-
-        public:
-    };
-}
-
-
-#endif //WINDOW_H
+#endif // WINDOW_H
