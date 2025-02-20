@@ -1,16 +1,11 @@
 
 #include "Core/App.h"
 #include "Core/Color.h"
-#include "Graphics/Shader.h"
 #include <iostream>
 
 using namespace Axle::Core;
-using namespace Axle::Graphics;
 
 int main() {
-
-  VertexShader vs = VertexShader();
-  vs.loadFromSource("");
 
   Color backgroundColor(ColorPreset::COLOR_DARK);
   std::cout << std::string(backgroundColor) << std::endl;

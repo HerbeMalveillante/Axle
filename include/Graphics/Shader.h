@@ -18,13 +18,22 @@ public:
   Shader(ShaderType shaderType);
 
   void loadFromSource(std::string source);
+  inline unsigned int getID() const { return this->id; };
 };
 
 class ShaderProgram {
 private:
   unsigned int id;
-  Shader vertexShader;
-  Shader fragmentShader;
+  unsigned int vertexShaderID;
+  unsigned int fragmentShaderID;
+  bool linked;
+
+public:
+  ShaderProgram(Shader vertexShader, Shader fragmentShader);
+  inline unsigned int getID() const { return this->id; };
+
+  void link();
+  void use();
 };
 
 } // namespace Axle::Graphics

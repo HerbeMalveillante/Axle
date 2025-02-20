@@ -3,7 +3,6 @@
 
 #include "Graphics/Shader.h"
 #include "glad/glad.h"
-#include <iostream>
 #include <stdexcept>
 
 namespace Axle::Graphics {
@@ -43,6 +42,48 @@ void Shader::loadFromSource(std::string source) {
 
   } else {
     this->compiled = true;
+  }
+}
+
+ShaderProgram::ShaderProgram(const Shader vertexShader,
+                             const Shader fragmentShader) {
+  this->linked = false;
+  this->id = glCreateProgram();
+  this->fragmentShaderID = fragmentShader.getID();
+  this->vertexShaderID = vertexShader.getID();
+}
+
+// TODO : Handle Errors if Shaders are not compiled
+void ShaderProgram::link() {
+
+  if (this->linked) {
+    throw std::runtime_error(
+        "AxleError : Shader Program already linked, cannot link again");
+  }
+
+  glAttachShader(this->id, this->vertexShaderID);
+  glAttachShader(this->id, this->fragmentShaderID);
+  glLinkProgram(this->id);
+
+  int success;
+  char infoLog[512];
+
+  glGetProgramiv(this->id, GL_LINK_STATUS, &success);
+  if (!success) {
+    glGetProgramInfoLog(this->id, 512, nullptr, infoLog);
+    throw std::runtime_error(
+        std::string("AxleError : Shader Program Linking Failed\n") + infoLog);
+  } else {
+    this->linked = true;
+  }
+}
+
+void ShaderProgram::use() {
+  if (!this->linked) {
+    throw std::runtime_error(
+        "AxleError : Shader Program not linked, cannot use");
+  } else {
+    glUseProgram(this->id);
   }
 }
 
