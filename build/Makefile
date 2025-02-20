@@ -274,6 +274,54 @@ src/Core/App.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Core/App.cpp.s
 .PHONY : src/Core/App.cpp.s
 
+src/Core/Color.o: src/Core/Color.cpp.o
+.PHONY : src/Core/Color.o
+
+# target to build an object file
+src/Core/Color.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Core/Color.cpp.o
+.PHONY : src/Core/Color.cpp.o
+
+src/Core/Color.i: src/Core/Color.cpp.i
+.PHONY : src/Core/Color.i
+
+# target to preprocess a source file
+src/Core/Color.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Core/Color.cpp.i
+.PHONY : src/Core/Color.cpp.i
+
+src/Core/Color.s: src/Core/Color.cpp.s
+.PHONY : src/Core/Color.s
+
+# target to generate assembly for a file
+src/Core/Color.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Core/Color.cpp.s
+.PHONY : src/Core/Color.cpp.s
+
+src/Graphics/Shader.o: src/Graphics/Shader.cpp.o
+.PHONY : src/Graphics/Shader.o
+
+# target to build an object file
+src/Graphics/Shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o
+.PHONY : src/Graphics/Shader.cpp.o
+
+src/Graphics/Shader.i: src/Graphics/Shader.cpp.i
+.PHONY : src/Graphics/Shader.i
+
+# target to preprocess a source file
+src/Graphics/Shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.i
+.PHONY : src/Graphics/Shader.cpp.i
+
+src/Graphics/Shader.s: src/Graphics/Shader.cpp.s
+.PHONY : src/Graphics/Shader.s
+
+# target to generate assembly for a file
+src/Graphics/Shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.s
+.PHONY : src/Graphics/Shader.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -321,6 +369,12 @@ help:
 	@echo "... src/Core/App.o"
 	@echo "... src/Core/App.i"
 	@echo "... src/Core/App.s"
+	@echo "... src/Core/Color.o"
+	@echo "... src/Core/Color.i"
+	@echo "... src/Core/Color.s"
+	@echo "... src/Graphics/Shader.o"
+	@echo "... src/Graphics/Shader.i"
+	@echo "... src/Graphics/Shader.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

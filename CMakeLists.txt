@@ -15,6 +15,8 @@ include_directories(external/glad/include)
 
 add_executable(Axle external/glad/src/glad.c
         src/Core/App.cpp
+        src/Core/Color.cpp
+        src/Graphics/Shader.cpp
         src/main.cpp
 )
 

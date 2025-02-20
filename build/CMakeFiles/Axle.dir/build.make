@@ -100,10 +100,38 @@ CMakeFiles/Axle.dir/src/Core/App.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Axle.dir/src/Core/App.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/herbemalveillante/Code/Axle/src/Core/App.cpp -o CMakeFiles/Axle.dir/src/Core/App.cpp.s
 
+CMakeFiles/Axle.dir/src/Core/Color.cpp.o: CMakeFiles/Axle.dir/flags.make
+CMakeFiles/Axle.dir/src/Core/Color.cpp.o: /Users/herbemalveillante/Code/Axle/src/Core/Color.cpp
+CMakeFiles/Axle.dir/src/Core/Color.cpp.o: CMakeFiles/Axle.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/herbemalveillante/Code/Axle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Axle.dir/src/Core/Color.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Axle.dir/src/Core/Color.cpp.o -MF CMakeFiles/Axle.dir/src/Core/Color.cpp.o.d -o CMakeFiles/Axle.dir/src/Core/Color.cpp.o -c /Users/herbemalveillante/Code/Axle/src/Core/Color.cpp
+
+CMakeFiles/Axle.dir/src/Core/Color.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Axle.dir/src/Core/Color.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/herbemalveillante/Code/Axle/src/Core/Color.cpp > CMakeFiles/Axle.dir/src/Core/Color.cpp.i
+
+CMakeFiles/Axle.dir/src/Core/Color.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Axle.dir/src/Core/Color.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/herbemalveillante/Code/Axle/src/Core/Color.cpp -o CMakeFiles/Axle.dir/src/Core/Color.cpp.s
+
+CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o: CMakeFiles/Axle.dir/flags.make
+CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o: /Users/herbemalveillante/Code/Axle/src/Graphics/Shader.cpp
+CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o: CMakeFiles/Axle.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/herbemalveillante/Code/Axle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o -MF CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o.d -o CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o -c /Users/herbemalveillante/Code/Axle/src/Graphics/Shader.cpp
+
+CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/herbemalveillante/Code/Axle/src/Graphics/Shader.cpp > CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.i
+
+CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/herbemalveillante/Code/Axle/src/Graphics/Shader.cpp -o CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.s
+
 CMakeFiles/Axle.dir/src/main.cpp.o: CMakeFiles/Axle.dir/flags.make
 CMakeFiles/Axle.dir/src/main.cpp.o: /Users/herbemalveillante/Code/Axle/src/main.cpp
 CMakeFiles/Axle.dir/src/main.cpp.o: CMakeFiles/Axle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/herbemalveillante/Code/Axle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Axle.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/herbemalveillante/Code/Axle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Axle.dir/src/main.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Axle.dir/src/main.cpp.o -MF CMakeFiles/Axle.dir/src/main.cpp.o.d -o CMakeFiles/Axle.dir/src/main.cpp.o -c /Users/herbemalveillante/Code/Axle/src/main.cpp
 
 CMakeFiles/Axle.dir/src/main.cpp.i: cmake_force
@@ -118,6 +146,8 @@ CMakeFiles/Axle.dir/src/main.cpp.s: cmake_force
 Axle_OBJECTS = \
 "CMakeFiles/Axle.dir/external/glad/src/glad.c.o" \
 "CMakeFiles/Axle.dir/src/Core/App.cpp.o" \
+"CMakeFiles/Axle.dir/src/Core/Color.cpp.o" \
+"CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o" \
 "CMakeFiles/Axle.dir/src/main.cpp.o"
 
 # External object files for target Axle
@@ -125,11 +155,13 @@ Axle_EXTERNAL_OBJECTS =
 
 Axle: CMakeFiles/Axle.dir/external/glad/src/glad.c.o
 Axle: CMakeFiles/Axle.dir/src/Core/App.cpp.o
+Axle: CMakeFiles/Axle.dir/src/Core/Color.cpp.o
+Axle: CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o
 Axle: CMakeFiles/Axle.dir/src/main.cpp.o
 Axle: CMakeFiles/Axle.dir/build.make
 Axle: external/glfw/src/libglfw3.a
 Axle: CMakeFiles/Axle.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/herbemalveillante/Code/Axle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Axle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/herbemalveillante/Code/Axle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Axle"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Axle.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

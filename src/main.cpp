@@ -1,22 +1,30 @@
 
 #include "Core/App.h"
-#include "glad/glad.h"
+#include "Core/Color.h"
+#include "Graphics/Shader.h"
+#include <iostream>
 
 using namespace Axle::Core;
+using namespace Axle::Graphics;
 
 int main() {
 
-  App::Init(800, 600, "Axle Engine");
+  VertexShader vs = VertexShader();
+  vs.loadFromSource("");
+
+  Color backgroundColor(ColorPreset::COLOR_DARK);
+  std::cout << std::string(backgroundColor) << std::endl;
+
+  App::Init(1200, 800, "Axle Engine");
 
   // Main loop
   while (!App::ShouldClose()) {
 
     // Inputs
-    App::processInput();
+    App::ProcessInput();
 
     // Rendering commands here
-    glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT);
+    App::Clear(backgroundColor);
 
     App::SwapBuffers();
     App::PollEvents();

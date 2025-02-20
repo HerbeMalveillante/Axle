@@ -17,13 +17,11 @@ void App::framebuffer_size_callback(GLFWwindow *window, int width, int height) {
   glViewport(0, 0, width, height);
 }
 
-void App::processInput() {
+void App::ProcessInput() {
   if (glfwGetKey(App::window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
     glfwSetWindowShouldClose(App::window, true);
   }
 }
-
-bool App::ShouldClose() { return glfwWindowShouldClose(App::window); }
 
 void App::Init(unsigned int width, unsigned int height, std::string title) {
 
@@ -69,6 +67,14 @@ void App::Init(unsigned int width, unsigned int height, std::string title) {
   // Set up the callback function for when the window is resized
   glfwSetFramebufferSizeCallback(App::window, App::framebuffer_size_callback);
 }
+
+void App::Clear(const Color clearColor) {
+  glClearColor(clearColor.getRf(), clearColor.getGf(), clearColor.getBf(),
+               clearColor.getAf());
+  glClear(GL_COLOR_BUFFER_BIT);
+}
+
+bool App::ShouldClose() { return glfwWindowShouldClose(App::window); }
 
 void App::SwapBuffers() { glfwSwapBuffers(App::window); }
 

@@ -4,6 +4,7 @@
 #define WINDOW_H
 
 #define GLFW_INCLUDE_NONE
+#include "Core/Color.h"
 #include "GLFW/glfw3.h"
 #include <string>
 
@@ -23,8 +24,9 @@ private:
 public:
   static GLFWwindow *window;
   // Input processing function
-  static void processInput();
+  static void ProcessInput();
   static void Init(unsigned int width, unsigned int height, std::string title);
+  static void Clear(Color clearColor);
   static bool ShouldClose();
   static void SwapBuffers();
   static void PollEvents();

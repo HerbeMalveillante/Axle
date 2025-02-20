@@ -5,6 +5,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/Axle.dir/external/glad/src/glad.c.o.d"
   "CMakeFiles/Axle.dir/src/Core/App.cpp.o"
   "CMakeFiles/Axle.dir/src/Core/App.cpp.o.d"
+  "CMakeFiles/Axle.dir/src/Core/Color.cpp.o"
+  "CMakeFiles/Axle.dir/src/Core/Color.cpp.o.d"
+  "CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o"
+  "CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o.d"
   "CMakeFiles/Axle.dir/src/main.cpp.o"
   "CMakeFiles/Axle.dir/src/main.cpp.o.d"
 )
