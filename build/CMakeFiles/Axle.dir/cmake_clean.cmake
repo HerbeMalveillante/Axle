@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Axle.dir/src/Core/Color.cpp.o.d"
   "CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o"
   "CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o.d"
+  "CMakeFiles/Axle.dir/src/Utils/Filesystem.cpp.o"
+  "CMakeFiles/Axle.dir/src/Utils/Filesystem.cpp.o.d"
   "CMakeFiles/Axle.dir/src/main.cpp.o"
   "CMakeFiles/Axle.dir/src/main.cpp.o.d"
 )

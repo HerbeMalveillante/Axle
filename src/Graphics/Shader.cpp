@@ -7,81 +7,86 @@
 
 namespace Axle::Graphics {
 
-Shader::Shader(ShaderType shaderType) {
-  this->type = shaderType;
+Shader::Shader(std::string vertexShaderSource,
+               std::string fragmentShaderSource) {
+  this->vertexShaderSource = vertexShaderSource;
+  this->fragmentShaderSource = fragmentShaderSource;
   this->compiled = false;
-  switch (shaderType) {
-  case ShaderType::VERTEX_SHADER:
-    this->id = glCreateShader(GL_VERTEX_SHADER);
-    break;
-  case ShaderType::FRAGMENT_SHADER:
-    this->id = glCreateShader(GL_FRAGMENT_SHADER);
-    break;
+}
+
+Shader::~Shader() {
+  if (this->compiled) {
+    glDeleteProgram(this->id);
   }
 }
 
-void Shader::loadFromSource(std::string source) {
+void Shader::compile() {
 
-  if (this->compiled) {
-    throw std::runtime_error(
-        "AxleError : Shader already compiled, cannot load source");
-  }
+  // Register the vertex and fragment shaders
+  unsigned int vertexShaderID = glCreateShader(GL_VERTEX_SHADER);
+  unsigned int fragmentShaderID = glCreateShader(GL_FRAGMENT_SHADER);
 
-  const char *src = source.c_str();
-  glShaderSource(this->id, 1, &src, nullptr);
-  glCompileShader(this->id);
+  // Fetch the source code of the shaders
+  const char *vertexShaderSource = this->vertexShaderSource.c_str();
+  const char *fragmentShaderSource = this->fragmentShaderSource.c_str();
 
+  // Compile the vertex shader
+  glShaderSource(vertexShaderID, 1, &vertexShaderSource, NULL);
+  glCompileShader(vertexShaderID);
+
+  // Check for compilation errors
   int success;
   char infoLog[512];
-  glGetShaderiv(this->id, GL_COMPILE_STATUS, &success);
+  glGetShaderiv(vertexShaderID, GL_COMPILE_STATUS, &success);
   if (!success) {
-
-    glGetShaderInfoLog(this->id, 512, nullptr, infoLog);
-    throw std::runtime_error(
-        std::string("AxleError : Shader Compilation Failed\n") + infoLog);
-
-  } else {
-    this->compiled = true;
+    glGetShaderInfoLog(vertexShaderID, 512, NULL, infoLog);
+    // Clean up and throw an exception
+    glDeleteShader(vertexShaderID);
+    throw std::runtime_error("AxleError : Vertex shader compilation failed: " +
+                             std::string(infoLog));
+    return;
   }
-}
 
-ShaderProgram::ShaderProgram(const Shader vertexShader,
-                             const Shader fragmentShader) {
-  this->linked = false;
+  // Compile the fragment shader
+  glShaderSource(fragmentShaderID, 1, &fragmentShaderSource, NULL);
+  glCompileShader(fragmentShaderID);
+
+  // Check for compilation errors
+  glGetShaderiv(fragmentShaderID, GL_COMPILE_STATUS, &success);
+  if (!success) {
+    glGetShaderInfoLog(fragmentShaderID, 512, NULL, infoLog);
+    // Clean up and throw an exception
+    glDeleteShader(vertexShaderID);
+    throw std::runtime_error(
+        "AxleError : Fragment shader compilation failed: " +
+        std::string(infoLog));
+    return;
+  }
+
+  // Register and link the shader program
   this->id = glCreateProgram();
-  this->fragmentShaderID = fragmentShader.getID();
-  this->vertexShaderID = vertexShader.getID();
-}
-
-// TODO : Handle Errors if Shaders are not compiled
-void ShaderProgram::link() {
-
-  if (this->linked) {
-    throw std::runtime_error(
-        "AxleError : Shader Program already linked, cannot link again");
-  }
-
-  glAttachShader(this->id, this->vertexShaderID);
-  glAttachShader(this->id, this->fragmentShaderID);
+  glAttachShader(this->id, vertexShaderID);
+  glAttachShader(this->id, fragmentShaderID);
   glLinkProgram(this->id);
 
-  int success;
-  char infoLog[512];
+  glDeleteShader(vertexShaderID);
+  glDeleteShader(fragmentShaderID);
 
+  // Check for linking errors
   glGetProgramiv(this->id, GL_LINK_STATUS, &success);
   if (!success) {
-    glGetProgramInfoLog(this->id, 512, nullptr, infoLog);
-    throw std::runtime_error(
-        std::string("AxleError : Shader Program Linking Failed\n") + infoLog);
-  } else {
-    this->linked = true;
+    glGetProgramInfoLog(this->id, 512, NULL, infoLog);
+    throw std::runtime_error("AxleError : Shader program linking failed: " +
+                             std::string(infoLog));
+    return;
   }
+
+  this->compiled = true;
 }
 
-void ShaderProgram::use() {
-  if (!this->linked) {
-    throw std::runtime_error(
-        "AxleError : Shader Program not linked, cannot use");
+void Shader::use() {
+  if (!this->compiled) {
+    throw std::runtime_error("AxleError : Shader program not compiled");
   } else {
     glUseProgram(this->id);
   }

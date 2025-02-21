@@ -25,12 +25,6 @@ void App::ProcessInput() {
 
 void App::Init(unsigned int width, unsigned int height, std::string title) {
 
-  float vertices[] = {
-      -0.5f, -0.5f, 0.0f, // bottom left
-      0.5f,  -0.5f, 0.0f, // bottom right
-      0.0f,  0.5f,  0.0f  // top
-  };
-
   App::width = width;
   App::height = height;
   App::title = title;
@@ -56,16 +50,13 @@ void App::Init(unsigned int width, unsigned int height, std::string title) {
     return;
   }
 
-  // Vertex buffer object creation
-  unsigned int VBO;
-  glGenBuffers(1, &VBO);
-  // Bind the buffer to the GL_ARRAY_BUFFER target
-  glBindBuffer(GL_ARRAY_BUFFER, VBO);
-  // Copy the vertices data into the buffer's memory
-  glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-
   // Set up the callback function for when the window is resized
   glfwSetFramebufferSizeCallback(App::window, App::framebuffer_size_callback);
+
+  // Print the openGL and GLSL versions
+  std::cout << "OpenGL version: " << glGetString(GL_VERSION) << std::endl;
+  std::cout << "GLSL version: " << glGetString(GL_SHADING_LANGUAGE_VERSION)
+            << std::endl;
 }
 
 void App::Clear(const Color clearColor) {

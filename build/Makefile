@@ -322,6 +322,30 @@ src/Graphics/Shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.s
 .PHONY : src/Graphics/Shader.cpp.s
 
+src/Utils/Filesystem.o: src/Utils/Filesystem.cpp.o
+.PHONY : src/Utils/Filesystem.o
+
+# target to build an object file
+src/Utils/Filesystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Utils/Filesystem.cpp.o
+.PHONY : src/Utils/Filesystem.cpp.o
+
+src/Utils/Filesystem.i: src/Utils/Filesystem.cpp.i
+.PHONY : src/Utils/Filesystem.i
+
+# target to preprocess a source file
+src/Utils/Filesystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Utils/Filesystem.cpp.i
+.PHONY : src/Utils/Filesystem.cpp.i
+
+src/Utils/Filesystem.s: src/Utils/Filesystem.cpp.s
+.PHONY : src/Utils/Filesystem.s
+
+# target to generate assembly for a file
+src/Utils/Filesystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Utils/Filesystem.cpp.s
+.PHONY : src/Utils/Filesystem.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -375,6 +399,9 @@ help:
 	@echo "... src/Graphics/Shader.o"
 	@echo "... src/Graphics/Shader.i"
 	@echo "... src/Graphics/Shader.s"
+	@echo "... src/Utils/Filesystem.o"
+	@echo "... src/Utils/Filesystem.i"
+	@echo "... src/Utils/Filesystem.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

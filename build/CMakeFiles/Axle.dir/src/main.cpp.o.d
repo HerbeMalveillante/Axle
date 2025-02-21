@@ -451,6 +451,10 @@ CMakeFiles/Axle.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__iterator/reverse_access.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__iterator/size.h \
   /Users/herbemalveillante/Code/Axle/external/glfw/include/GLFW/glfw3.h \
+  /Users/herbemalveillante/Code/Axle/include/Graphics/Shader.h \
+  /Users/herbemalveillante/Code/Axle/include/Utils/Filesystem.h \
+  /Users/herbemalveillante/Code/Axle/external/glad/include/glad/glad.h \
+  /Users/herbemalveillante/Code/Axle/external/glad/include/KHR/khrplatform.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__locale \
