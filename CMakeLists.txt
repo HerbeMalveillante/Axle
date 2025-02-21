@@ -4,6 +4,9 @@ project(Axle)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+# Copy resources to build directory
+file(COPY res DESTINATION ${CMAKE_BINARY_DIR})
+
 include_directories(include)
 
 # Add external/glfw
@@ -12,6 +15,9 @@ add_subdirectory(external/glfw)
 
 # Add glad
 include_directories(external/glad/include)
+
+# Add stb
+include_directories(external/stb/include)
 
 add_executable(Axle external/glad/src/glad.c
         src/Core/App.cpp

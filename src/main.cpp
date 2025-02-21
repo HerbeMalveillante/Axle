@@ -4,22 +4,22 @@
 #include "Graphics/Shader.h"
 #include "Utils/Filesystem.h"
 #include "glad/glad.h"
-#include <iostream>
 
 using namespace Axle::Core;
 using namespace Axle::Graphics;
 
 int main() {
 
-  App::Init(1200, 800, "Axle Engine");
+  App::Init(400, 400, "Axle Engine");
+  App::SetWindowResizable(true);
 
   Color backgroundColor(ColorPreset::COLOR_DARK);
 
   // Shader setup
-  std::string vertexShaderSource = Axle::Utils::LoadTextFromFile(
-      "/Users/herbemalveillante/Code/Axle/res/shaders/default.vs");
-  std::string fragmentShaderSource = Axle::Utils::LoadTextFromFile(
-      "/Users/herbemalveillante/Code/Axle/res/shaders/default.fs");
+  std::string vertexShaderSource =
+      Axle::Utils::LoadTextFromFile("res/shaders/default.vs");
+  std::string fragmentShaderSource =
+      Axle::Utils::LoadTextFromFile("res/shaders/default.fs");
   Shader defaultShader(vertexShaderSource, fragmentShaderSource);
   defaultShader.compile();
 
@@ -45,6 +45,7 @@ int main() {
 
   // Main loop
   while (!App::ShouldClose()) {
+
     // Inputs
     App::ProcessInput();
 

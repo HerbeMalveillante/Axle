@@ -1,37 +1,37 @@
 [
 {
   "directory": "/Users/herbemalveillante/Code/Axle/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/external/glad/src/glad.c.o -c /Users/herbemalveillante/Code/Axle/external/glad/src/glad.c",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -I/Users/herbemalveillante/Code/Axle/external/stb/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/external/glad/src/glad.c.o -c /Users/herbemalveillante/Code/Axle/external/glad/src/glad.c",
   "file": "/Users/herbemalveillante/Code/Axle/external/glad/src/glad.c",
   "output": "CMakeFiles/Axle.dir/external/glad/src/glad.c.o"
 },
 {
   "directory": "/Users/herbemalveillante/Code/Axle/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/src/Core/App.cpp.o -c /Users/herbemalveillante/Code/Axle/src/Core/App.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -I/Users/herbemalveillante/Code/Axle/external/stb/include -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/src/Core/App.cpp.o -c /Users/herbemalveillante/Code/Axle/src/Core/App.cpp",
   "file": "/Users/herbemalveillante/Code/Axle/src/Core/App.cpp",
   "output": "CMakeFiles/Axle.dir/src/Core/App.cpp.o"
 },
 {
   "directory": "/Users/herbemalveillante/Code/Axle/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/src/Core/Color.cpp.o -c /Users/herbemalveillante/Code/Axle/src/Core/Color.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -I/Users/herbemalveillante/Code/Axle/external/stb/include -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/src/Core/Color.cpp.o -c /Users/herbemalveillante/Code/Axle/src/Core/Color.cpp",
   "file": "/Users/herbemalveillante/Code/Axle/src/Core/Color.cpp",
   "output": "CMakeFiles/Axle.dir/src/Core/Color.cpp.o"
 },
 {
   "directory": "/Users/herbemalveillante/Code/Axle/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o -c /Users/herbemalveillante/Code/Axle/src/Graphics/Shader.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -I/Users/herbemalveillante/Code/Axle/external/stb/include -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o -c /Users/herbemalveillante/Code/Axle/src/Graphics/Shader.cpp",
   "file": "/Users/herbemalveillante/Code/Axle/src/Graphics/Shader.cpp",
   "output": "CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o"
 },
 {
   "directory": "/Users/herbemalveillante/Code/Axle/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/src/Utils/Filesystem.cpp.o -c /Users/herbemalveillante/Code/Axle/src/Utils/Filesystem.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -I/Users/herbemalveillante/Code/Axle/external/stb/include -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/src/Utils/Filesystem.cpp.o -c /Users/herbemalveillante/Code/Axle/src/Utils/Filesystem.cpp",
   "file": "/Users/herbemalveillante/Code/Axle/src/Utils/Filesystem.cpp",
   "output": "CMakeFiles/Axle.dir/src/Utils/Filesystem.cpp.o"
 },
 {
   "directory": "/Users/herbemalveillante/Code/Axle/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/src/main.cpp.o -c /Users/herbemalveillante/Code/Axle/src/main.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -I/Users/herbemalveillante/Code/Axle/external/stb/include -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/Axle.dir/src/main.cpp.o -c /Users/herbemalveillante/Code/Axle/src/main.cpp",
   "file": "/Users/herbemalveillante/Code/Axle/src/main.cpp",
   "output": "CMakeFiles/Axle.dir/src/main.cpp.o"
 },

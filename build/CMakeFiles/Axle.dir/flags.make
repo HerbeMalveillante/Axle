@@ -5,7 +5,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include
+C_INCLUDES = -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -I/Users/herbemalveillante/Code/Axle/external/stb/include
 
 C_FLAGSarm64 =  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
 
@@ -13,7 +13,7 @@ C_FLAGS =  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include
+CXX_INCLUDES = -I/Users/herbemalveillante/Code/Axle/include -I/Users/herbemalveillante/Code/Axle/external/glfw/include -I/Users/herbemalveillante/Code/Axle/external/glad/include -I/Users/herbemalveillante/Code/Axle/external/stb/include
 
 CXX_FLAGSarm64 = -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
 
