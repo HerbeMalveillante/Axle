@@ -176,7 +176,7 @@ void App::SetWindowIcons(std::vector<std::string> paths,
   }
 
   // Set the window icon
-  glfwSetWindowIcon(nullptr, images.size(), images.data());
+  glfwSetWindowIcon(App::window, images.size(), images.data());
 
   // Free the image memory
   for (auto &image : images) {
