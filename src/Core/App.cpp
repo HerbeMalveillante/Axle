@@ -83,15 +83,10 @@ void App::Init(unsigned int width, unsigned int height, std::string title) {
   std::cout << "GLSL version: " << glGetString(GL_SHADING_LANGUAGE_VERSION)
             << std::endl;
 
-  App::isReady = true;
+  glEnable(GL_BLEND);
+  glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-  // Load the default Window Icons
-  std::vector<std::string> paths = {"res/icons/16.png",  "res/icons/32.png",
-                                    "res/icons/64.png",  "res/icons/128.png",
-                                    "res/icons/256.png", "res/icons/512.png",
-                                    "res/icons/1024.png"};
-  std::vector<unsigned int> sizes = {16, 32, 64, 128, 256, 512, 1024};
-  App::SetWindowIcons(paths, sizes);
+  App::isReady = true;
 }
 
 void App::Clear(const Color clearColor) {
@@ -154,34 +149,6 @@ unsigned int App::GetWindowWidth() {
 unsigned int App::GetWindowHeight() {
   App::throwErrorIfUninitialized();
   return App::height;
-}
-
-void App::SetWindowIcons(std::vector<std::string> paths,
-                         std::vector<unsigned int> sizes) {
-  App::throwErrorIfUninitialized();
-  std::vector<GLFWimage> images(paths.size());
-  for (size_t i = 0; i < paths.size(); i++) {
-    int width, height, nrChannels;
-    unsigned char *data =
-        stbi_load(paths[i].c_str(), &width, &height, &nrChannels, 0);
-    if (data) {
-      images[i].width = width;
-      images[i].height = height;
-      images[i].pixels = data;
-      std::cout << "Loaded icon " << paths[i] << " with size " << width << "x"
-                << height << std::endl;
-    } else {
-      std::cerr << "Failed to load icon " << paths[i] << std::endl;
-    }
-  }
-
-  // Set the window icon
-  glfwSetWindowIcon(App::window, images.size(), images.data());
-
-  // Free the image memory
-  for (auto &image : images) {
-    stbi_image_free(image.pixels);
-  }
 }
 
 } // namespace Axle::Core

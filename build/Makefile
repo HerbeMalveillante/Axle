@@ -322,6 +322,54 @@ src/Graphics/Shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.s
 .PHONY : src/Graphics/Shader.cpp.s
 
+src/Graphics/Texture.o: src/Graphics/Texture.cpp.o
+.PHONY : src/Graphics/Texture.o
+
+# target to build an object file
+src/Graphics/Texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Graphics/Texture.cpp.o
+.PHONY : src/Graphics/Texture.cpp.o
+
+src/Graphics/Texture.i: src/Graphics/Texture.cpp.i
+.PHONY : src/Graphics/Texture.i
+
+# target to preprocess a source file
+src/Graphics/Texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Graphics/Texture.cpp.i
+.PHONY : src/Graphics/Texture.cpp.i
+
+src/Graphics/Texture.s: src/Graphics/Texture.cpp.s
+.PHONY : src/Graphics/Texture.s
+
+# target to generate assembly for a file
+src/Graphics/Texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Graphics/Texture.cpp.s
+.PHONY : src/Graphics/Texture.cpp.s
+
+src/Math/Mat4.o: src/Math/Mat4.cpp.o
+.PHONY : src/Math/Mat4.o
+
+# target to build an object file
+src/Math/Mat4.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Math/Mat4.cpp.o
+.PHONY : src/Math/Mat4.cpp.o
+
+src/Math/Mat4.i: src/Math/Mat4.cpp.i
+.PHONY : src/Math/Mat4.i
+
+# target to preprocess a source file
+src/Math/Mat4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Math/Mat4.cpp.i
+.PHONY : src/Math/Mat4.cpp.i
+
+src/Math/Mat4.s: src/Math/Mat4.cpp.s
+.PHONY : src/Math/Mat4.s
+
+# target to generate assembly for a file
+src/Math/Mat4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Math/Mat4.cpp.s
+.PHONY : src/Math/Mat4.cpp.s
+
 src/Utils/Filesystem.o: src/Utils/Filesystem.cpp.o
 .PHONY : src/Utils/Filesystem.o
 
@@ -399,6 +447,12 @@ help:
 	@echo "... src/Graphics/Shader.o"
 	@echo "... src/Graphics/Shader.i"
 	@echo "... src/Graphics/Shader.s"
+	@echo "... src/Graphics/Texture.o"
+	@echo "... src/Graphics/Texture.i"
+	@echo "... src/Graphics/Texture.s"
+	@echo "... src/Math/Mat4.o"
+	@echo "... src/Math/Mat4.i"
+	@echo "... src/Math/Mat4.s"
 	@echo "... src/Utils/Filesystem.o"
 	@echo "... src/Utils/Filesystem.i"
 	@echo "... src/Utils/Filesystem.s"

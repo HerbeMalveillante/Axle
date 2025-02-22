@@ -92,4 +92,33 @@ void Shader::use() {
   }
 }
 
+void Shader::setBool(const std::string &name, bool value) const {
+  glUniform1i(glGetUniformLocation(this->id, name.c_str()), (int)value);
+}
+
+void Shader::setInt(const std::string &name, int value) const {
+  glUniform1i(glGetUniformLocation(this->id, name.c_str()), value);
+}
+
+void Shader::setFloat(const std::string &name, float value) const {
+  glUniform1f(glGetUniformLocation(this->id, name.c_str()), value);
+}
+
+void Shader::setVec2(const std::string &name, float x, float y) const {
+  glUniform2f(glGetUniformLocation(this->id, name.c_str()), x, y);
+}
+
+void Shader::setVec3(const std::string &name, float x, float y, float z) const {
+  glUniform3f(glGetUniformLocation(this->id, name.c_str()), x, y, z);
+}
+
+void Shader::setVec4(const std::string &name, float x, float y, float z,
+                     float w) const {
+  glUniform4f(glGetUniformLocation(this->id, name.c_str()), x, y, z, w);
+}
+
+void Shader::setTexture(const std::string &name, Texture texture) const {
+  glUniform1i(glGetUniformLocation(this->id, name.c_str()), texture.getID());
+}
+
 } // namespace Axle::Graphics

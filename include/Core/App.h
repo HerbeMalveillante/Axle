@@ -7,7 +7,6 @@
 #include "Core/Color.h"
 #include "GLFW/glfw3.h"
 #include <string>
-#include <vector>
 
 namespace Axle::Core {
 class App {
@@ -48,9 +47,6 @@ public:
   static unsigned int GetWindowWidth();
   static unsigned int GetWindowHeight();
 
-  // This will NOT work on macOS
-  static void SetWindowIcons(std::vector<std::string> paths,
-                             std::vector<unsigned int> sizes);
   static bool IsReady() { return isReady; }
 
   // We don't want the window to be instantiated

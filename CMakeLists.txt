@@ -23,7 +23,9 @@ add_executable(Axle external/glad/src/glad.c
         src/Core/App.cpp
         src/Core/Color.cpp
         src/Graphics/Shader.cpp
+        src/Graphics/Texture.cpp
         src/Utils/Filesystem.cpp
+        src/Math/Mat4.cpp
         src/main.cpp
 )
 
