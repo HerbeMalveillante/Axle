@@ -1,6 +1,7 @@
 #ifndef AXLE_COLOR_H
 #define AXLE_COLOR_H
 
+#include "Utils/Constants.h"
 #include <string>
 
 namespace Axle::Core {
@@ -39,20 +40,35 @@ private:
 
 public:
   Color();
-  Color(unsigned char r, unsigned char g, unsigned char b, unsigned char a);
-  Color(unsigned char r, unsigned char g, unsigned char b);
-  Color(int hexcode);
-  Color(ColorPreset preset);
+  Color( unsigned char red,
+         unsigned char green,
+         unsigned char blue,
+         unsigned char alpha );
+  Color( unsigned char red, unsigned char green, unsigned char blue );
+  Color( int hexcode );
+  Color( ColorPreset preset );
 
-  unsigned char getRi() const { return r; }
-  unsigned char getGi() const { return g; }
-  unsigned char getBi() const { return b; }
-  unsigned char getAi() const { return a; }
+  [[nodiscard]] unsigned char getRi() const { return r; }
+  [[nodiscard]] unsigned char getGi() const { return g; }
+  [[nodiscard]] unsigned char getBi() const { return b; }
+  [[nodiscard]] unsigned char getAi() const { return a; }
 
-  float getRf() const { return r / 255.0f; }
-  float getGf() const { return g / 255.0f; }
-  float getBf() const { return b / 255.0f; }
-  float getAf() const { return a / 255.0f; }
+  [[nodiscard]] float getRf() const
+  {
+    return (float)r / Utils::MAX_COLOR_VALUE;
+  }
+  [[nodiscard]] float getGf() const
+  {
+    return (float)g / Utils::MAX_COLOR_VALUE;
+  }
+  [[nodiscard]] float getBf() const
+  {
+    return (float)b / Utils::MAX_COLOR_VALUE;
+  }
+  [[nodiscard]] float getAf() const
+  {
+    return (float)a / Utils::MAX_COLOR_VALUE;
+  }
 
   operator std::string() const;
 };

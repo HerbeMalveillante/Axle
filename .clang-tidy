@@ -1,0 +1,2 @@
+---
+Checks: "-*,bugprone-*, clang-analyzer-*, concurrency-*,cppcoreguidelines-*, bugprone-*, performance-*, readability-*, modernize-*, -cppcoreguidelines-avoid-non-const-global-variables, -modernize-use-trailing-return-type"

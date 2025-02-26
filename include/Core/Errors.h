@@ -7,17 +7,28 @@
 namespace Axle::Core {
 
 class AxleError : public std::exception {
+
+private:
+  std::string message = "An unknown error occurred";
+
 protected:
-  std::string message;
+  void setMessage( const std::string& message );
 
 public:
   explicit AxleError();
-  const char *what() const noexcept override;
+  [[nodiscard]] const char* what() const noexcept override;
 };
 
 class AppNotInitializedError : public AxleError {
 public:
   explicit AppNotInitializedError();
+};
+
+class InvalidParameterRangeError : public AxleError {
+public:
+  InvalidParameterRangeError( const char* parameter,
+                              float rangeMin,
+                              float rangeMax );
 };
 
 } // namespace Axle::Core
