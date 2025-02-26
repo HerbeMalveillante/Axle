@@ -15,7 +15,7 @@ protected:
   void setMessage( const std::string& message );
 
 public:
-  explicit AxleError();
+  explicit AxleError() = default;
   [[nodiscard]] const char* what() const noexcept override;
 };
 

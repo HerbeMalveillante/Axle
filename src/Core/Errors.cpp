@@ -2,7 +2,6 @@
 
 namespace Axle::Core {
 
-AxleError::AxleError() {}
 const char* AxleError::what() const noexcept { return message.c_str(); }
 void AxleError::setMessage( const std::string& message )
 {
