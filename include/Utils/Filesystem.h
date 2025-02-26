@@ -1,5 +1,5 @@
-#ifndef FILESYSTEM_H
-#define FILESYSTEM_H
+#ifndef AXLE_FILESYSTEM_H
+#define AXLE_FILESYSTEM_H
 
 #include <string>
 
@@ -9,4 +9,4 @@ std::string LoadTextFromFile(const std::string filePath);
 
 } // namespace Axle::Utils
 
-#endif // FILESYSTEM_H
+#endif // AXLE_FILESYSTEM_H

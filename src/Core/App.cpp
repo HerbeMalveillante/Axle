@@ -1,6 +1,7 @@
 #define GLFW_INCLUDE_NONE
 
 #include "Core/App.h"
+#include "Core/Errors.h"
 #include "GLFW/glfw3.h"
 #include "glad/glad.h"
 #include <iostream>
@@ -24,21 +25,20 @@ bool App::resizable = false;
 
 GLFWwindow *App::window = nullptr;
 
-void App::framebuffer_size_callback(GLFWwindow *window, int width, int height) {
-  App::throwErrorIfUninitialized();
+void App::ThrowErrorIfUninitialized() {
+  if (!App::isReady) {
+    throw AppNotInitializedError();
+  }
+}
+void App::FramebufferSizeCallback(GLFWwindow *window, int width, int height) {
+  App::ThrowErrorIfUninitialized();
   App::width = width;
   App::height = height;
   glViewport(0, 0, width, height);
 }
 
-void App::throwErrorIfUninitialized() {
-  if (!App::isReady) {
-    throw std::runtime_error("AxleError : App not initialized");
-  }
-}
-
 void App::ProcessInput() {
-  App::throwErrorIfUninitialized();
+  App::ThrowErrorIfUninitialized();
   if (glfwGetKey(App::window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
     glfwSetWindowShouldClose(App::window, true);
   }
@@ -74,7 +74,7 @@ void App::Init(unsigned int width, unsigned int height, std::string title) {
   }
 
   // Set up the callback function for when the window is resized
-  glfwSetFramebufferSizeCallback(App::window, App::framebuffer_size_callback);
+  glfwSetFramebufferSizeCallback(App::window, App::FramebufferSizeCallback);
 
   // Print the renderer
   std::cout << "Renderer: " << glGetString(GL_RENDERER) << std::endl;
@@ -96,27 +96,27 @@ void App::Clear(const Color clearColor) {
 }
 
 bool App::ShouldClose() {
-  App::throwErrorIfUninitialized();
+  App::ThrowErrorIfUninitialized();
   return glfwWindowShouldClose(App::window);
 }
 
 void App::SwapBuffers() {
-  App::throwErrorIfUninitialized();
+  App::ThrowErrorIfUninitialized();
   glfwSwapBuffers(App::window);
 }
 
 void App::PollEvents() {
-  App::throwErrorIfUninitialized();
+  App::ThrowErrorIfUninitialized();
   glfwPollEvents();
 }
 
 void App::Exit() {
-  App::throwErrorIfUninitialized();
+  App::ThrowErrorIfUninitialized();
   glfwTerminate();
 }
 
 void App::SetWindowResizable(bool resizable) {
-  App::throwErrorIfUninitialized();
+  App::ThrowErrorIfUninitialized();
   App::resizable = resizable;
   if (resizable) {
     glfwSetWindowAttrib(App::window, GLFW_RESIZABLE, GLFW_TRUE);
@@ -126,7 +126,7 @@ void App::SetWindowResizable(bool resizable) {
 }
 
 void App::SetWindowMinSize(unsigned int width, unsigned int height) {
-  App::throwErrorIfUninitialized();
+  App::ThrowErrorIfUninitialized();
 
   App::minWidth = width;
   App::minHeight = height;
@@ -134,7 +134,7 @@ void App::SetWindowMinSize(unsigned int width, unsigned int height) {
                           App::maxWidth, App::maxHeight);
 }
 void App::SetWindowMaxSize(unsigned int width, unsigned int height) {
-  App::throwErrorIfUninitialized();
+  App::ThrowErrorIfUninitialized();
 
   App::maxWidth = width;
   App::maxHeight = height;
@@ -143,11 +143,11 @@ void App::SetWindowMaxSize(unsigned int width, unsigned int height) {
 }
 
 unsigned int App::GetWindowWidth() {
-  App::throwErrorIfUninitialized();
+  App::ThrowErrorIfUninitialized();
   return App::width;
 }
 unsigned int App::GetWindowHeight() {
-  App::throwErrorIfUninitialized();
+  App::ThrowErrorIfUninitialized();
   return App::height;
 }
 

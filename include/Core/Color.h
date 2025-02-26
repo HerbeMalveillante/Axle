@@ -1,5 +1,5 @@
-#ifndef COLOR_H
-#define COLOR_H
+#ifndef AXLE_COLOR_H
+#define AXLE_COLOR_H
 
 #include <string>
 
@@ -58,4 +58,4 @@ public:
 };
 
 } // namespace Axle::Core
-#endif // COLOR_H
+#endif // AXLE_COLOR_H

@@ -11,9 +11,11 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/herbemalveillante/Code/Axle/external/glad/src/glad.c" "CMakeFiles/Axle.dir/external/glad/src/glad.c.o" "gcc" "CMakeFiles/Axle.dir/external/glad/src/glad.c.o.d"
   "/Users/herbemalveillante/Code/Axle/src/Core/App.cpp" "CMakeFiles/Axle.dir/src/Core/App.cpp.o" "gcc" "CMakeFiles/Axle.dir/src/Core/App.cpp.o.d"
   "/Users/herbemalveillante/Code/Axle/src/Core/Color.cpp" "CMakeFiles/Axle.dir/src/Core/Color.cpp.o" "gcc" "CMakeFiles/Axle.dir/src/Core/Color.cpp.o.d"
+  "/Users/herbemalveillante/Code/Axle/src/Core/Errors.cpp" "CMakeFiles/Axle.dir/src/Core/Errors.cpp.o" "gcc" "CMakeFiles/Axle.dir/src/Core/Errors.cpp.o.d"
   "/Users/herbemalveillante/Code/Axle/src/Graphics/Shader.cpp" "CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o" "gcc" "CMakeFiles/Axle.dir/src/Graphics/Shader.cpp.o.d"
   "/Users/herbemalveillante/Code/Axle/src/Graphics/Texture.cpp" "CMakeFiles/Axle.dir/src/Graphics/Texture.cpp.o" "gcc" "CMakeFiles/Axle.dir/src/Graphics/Texture.cpp.o.d"
-  "/Users/herbemalveillante/Code/Axle/src/Math/Mat4.cpp" "CMakeFiles/Axle.dir/src/Math/Mat4.cpp.o" "gcc" "CMakeFiles/Axle.dir/src/Math/Mat4.cpp.o.d"
+  "/Users/herbemalveillante/Code/Axle/src/Math/Matrix.cpp" "CMakeFiles/Axle.dir/src/Math/Matrix.cpp.o" "gcc" "CMakeFiles/Axle.dir/src/Math/Matrix.cpp.o.d"
+  "/Users/herbemalveillante/Code/Axle/src/Math/Vector.cpp" "CMakeFiles/Axle.dir/src/Math/Vector.cpp.o" "gcc" "CMakeFiles/Axle.dir/src/Math/Vector.cpp.o.d"
   "/Users/herbemalveillante/Code/Axle/src/Utils/Filesystem.cpp" "CMakeFiles/Axle.dir/src/Utils/Filesystem.cpp.o" "gcc" "CMakeFiles/Axle.dir/src/Utils/Filesystem.cpp.o.d"
   "/Users/herbemalveillante/Code/Axle/src/main.cpp" "CMakeFiles/Axle.dir/src/main.cpp.o" "gcc" "CMakeFiles/Axle.dir/src/main.cpp.o.d"
   )

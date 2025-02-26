@@ -22,10 +22,12 @@ include_directories(external/stb/include)
 add_executable(Axle external/glad/src/glad.c
         src/Core/App.cpp
         src/Core/Color.cpp
+        src/Core/Errors.cpp
         src/Graphics/Shader.cpp
         src/Graphics/Texture.cpp
         src/Utils/Filesystem.cpp
-        src/Math/Mat4.cpp
+        src/Math/Matrix.cpp
+        src/Math/Vector.cpp
         src/main.cpp
 )
 

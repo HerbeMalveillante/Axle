@@ -298,6 +298,30 @@ src/Core/Color.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Core/Color.cpp.s
 .PHONY : src/Core/Color.cpp.s
 
+src/Core/Errors.o: src/Core/Errors.cpp.o
+.PHONY : src/Core/Errors.o
+
+# target to build an object file
+src/Core/Errors.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Core/Errors.cpp.o
+.PHONY : src/Core/Errors.cpp.o
+
+src/Core/Errors.i: src/Core/Errors.cpp.i
+.PHONY : src/Core/Errors.i
+
+# target to preprocess a source file
+src/Core/Errors.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Core/Errors.cpp.i
+.PHONY : src/Core/Errors.cpp.i
+
+src/Core/Errors.s: src/Core/Errors.cpp.s
+.PHONY : src/Core/Errors.s
+
+# target to generate assembly for a file
+src/Core/Errors.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Core/Errors.cpp.s
+.PHONY : src/Core/Errors.cpp.s
+
 src/Graphics/Shader.o: src/Graphics/Shader.cpp.o
 .PHONY : src/Graphics/Shader.o
 
@@ -346,29 +370,53 @@ src/Graphics/Texture.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Graphics/Texture.cpp.s
 .PHONY : src/Graphics/Texture.cpp.s
 
-src/Math/Mat4.o: src/Math/Mat4.cpp.o
-.PHONY : src/Math/Mat4.o
+src/Math/Matrix.o: src/Math/Matrix.cpp.o
+.PHONY : src/Math/Matrix.o
 
 # target to build an object file
-src/Math/Mat4.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Math/Mat4.cpp.o
-.PHONY : src/Math/Mat4.cpp.o
+src/Math/Matrix.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Math/Matrix.cpp.o
+.PHONY : src/Math/Matrix.cpp.o
 
-src/Math/Mat4.i: src/Math/Mat4.cpp.i
-.PHONY : src/Math/Mat4.i
+src/Math/Matrix.i: src/Math/Matrix.cpp.i
+.PHONY : src/Math/Matrix.i
 
 # target to preprocess a source file
-src/Math/Mat4.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Math/Mat4.cpp.i
-.PHONY : src/Math/Mat4.cpp.i
+src/Math/Matrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Math/Matrix.cpp.i
+.PHONY : src/Math/Matrix.cpp.i
 
-src/Math/Mat4.s: src/Math/Mat4.cpp.s
-.PHONY : src/Math/Mat4.s
+src/Math/Matrix.s: src/Math/Matrix.cpp.s
+.PHONY : src/Math/Matrix.s
 
 # target to generate assembly for a file
-src/Math/Mat4.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Math/Mat4.cpp.s
-.PHONY : src/Math/Mat4.cpp.s
+src/Math/Matrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Math/Matrix.cpp.s
+.PHONY : src/Math/Matrix.cpp.s
+
+src/Math/Vector.o: src/Math/Vector.cpp.o
+.PHONY : src/Math/Vector.o
+
+# target to build an object file
+src/Math/Vector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Math/Vector.cpp.o
+.PHONY : src/Math/Vector.cpp.o
+
+src/Math/Vector.i: src/Math/Vector.cpp.i
+.PHONY : src/Math/Vector.i
+
+# target to preprocess a source file
+src/Math/Vector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Math/Vector.cpp.i
+.PHONY : src/Math/Vector.cpp.i
+
+src/Math/Vector.s: src/Math/Vector.cpp.s
+.PHONY : src/Math/Vector.s
+
+# target to generate assembly for a file
+src/Math/Vector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Math/Vector.cpp.s
+.PHONY : src/Math/Vector.cpp.s
 
 src/Utils/Filesystem.o: src/Utils/Filesystem.cpp.o
 .PHONY : src/Utils/Filesystem.o
@@ -444,15 +492,21 @@ help:
 	@echo "... src/Core/Color.o"
 	@echo "... src/Core/Color.i"
 	@echo "... src/Core/Color.s"
+	@echo "... src/Core/Errors.o"
+	@echo "... src/Core/Errors.i"
+	@echo "... src/Core/Errors.s"
 	@echo "... src/Graphics/Shader.o"
 	@echo "... src/Graphics/Shader.i"
 	@echo "... src/Graphics/Shader.s"
 	@echo "... src/Graphics/Texture.o"
 	@echo "... src/Graphics/Texture.i"
 	@echo "... src/Graphics/Texture.s"
-	@echo "... src/Math/Mat4.o"
-	@echo "... src/Math/Mat4.i"
-	@echo "... src/Math/Mat4.s"
+	@echo "... src/Math/Matrix.o"
+	@echo "... src/Math/Matrix.i"
+	@echo "... src/Math/Matrix.s"
+	@echo "... src/Math/Vector.o"
+	@echo "... src/Math/Vector.i"
+	@echo "... src/Math/Vector.s"
 	@echo "... src/Utils/Filesystem.o"
 	@echo "... src/Utils/Filesystem.i"
 	@echo "... src/Utils/Filesystem.s"

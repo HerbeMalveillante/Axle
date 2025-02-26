@@ -10,7 +10,7 @@
 using namespace Axle::Core;
 using namespace Axle::Graphics;
 
-int main() {
+void example1() {
 
   App::Init(800, 800, "Axle Engine");
   App::SetWindowResizable(true);
@@ -121,5 +121,11 @@ int main() {
   }
 
   App::Exit();
-  return 0;
 }
+
+void example2() { App::PollEvents(); }
+
+int main() {
+  example2();
+  return 0;
+};

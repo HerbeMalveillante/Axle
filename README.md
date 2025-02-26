@@ -12,3 +12,12 @@ Raylib is a behemoth in terms of functions, and trying to replicate it from the 
 
 It might be easier to custom-implement all features I may need using learnopengl and other tutorials, in order to come up
 with my own project structure, functions, etc.
+
+## Math functions
+
+- Matrix4 data structure
+- Vector2, Vector3 data structure
+- Quaternion data structure
+
+For vectors, one possibility would be to use a base class with
+an arbitrary number of components stored in an array.

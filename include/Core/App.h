@@ -1,10 +1,11 @@
 
 
-#ifndef WINDOW_H
-#define WINDOW_H
+#ifndef AXLE_WINDOW_H
+#define AXLE_WINDOW_H
 
 #define GLFW_INCLUDE_NONE
 #include "Core/Color.h"
+#include "Core/Errors.h"
 #include "GLFW/glfw3.h"
 #include <string>
 
@@ -26,10 +27,10 @@ private:
   static bool resizable;
 
   // Framebuffer size callback function
-  static void framebuffer_size_callback(GLFWwindow *window, int width,
-                                        int height);
+  static void FramebufferSizeCallback(GLFWwindow *window, int width,
+                                      int height);
 
-  static void throwErrorIfUninitialized();
+  static void ThrowErrorIfUninitialized();
 
 public:
   static void Init(unsigned int width, unsigned int height, std::string title);
@@ -55,4 +56,4 @@ public:
 
 } // namespace Axle::Core
 
-#endif // WINDOW_H
+#endif // AXLE_WINDOW_H

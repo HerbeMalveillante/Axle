@@ -1,5 +1,5 @@
-#ifndef SHADER_H
-#define SHADER_H
+#ifndef AXLE_SHADER_H
+#define AXLE_SHADER_H
 
 #include "Graphics/Texture.h"
 #include <string>
@@ -36,4 +36,4 @@ public:
 
 } // namespace Axle::Graphics
 
-#endif // SHADER_H
+#endif // AXLE_SHADER_H
