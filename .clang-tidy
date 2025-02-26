@@ -11,6 +11,7 @@ Checks: >
   -cppcoreguidelines-avoid-non-const-global-variables,
   -modernize-use-trailing-return-type,
   -bugprone-easily-swappable-parameters,
+  -cppcoreguidelines-pro-type-reinterpret-cast,
 CheckOptions:
   cppcoreguidelines-avoid-magic-numbers.IgnorePowersOf2IntegerValues: 1
   readability-magic-numbers.IgnorePowersOf2IntegerValues: 1
