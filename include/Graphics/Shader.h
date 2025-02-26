@@ -40,7 +40,7 @@ public:
   void
   setVec4( const std::string& name, float x, float y, float z, float w ) const;
 
-  void setTexture( const std::string& name, Texture texture ) const;
+  void setTexture( const std::string& name, const Texture& texture ) const;
 };
 
 } // namespace Axle::Graphics

@@ -21,3 +21,7 @@ with my own project structure, functions, etc.
 
 For vectors, one possibility would be to use a base class with
 an arbitrary number of components stored in an array.
+
+## TODOS
+
+- Add a copy constructor to the Texture class

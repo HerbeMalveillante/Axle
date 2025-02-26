@@ -15,8 +15,8 @@ Checks: >
 CheckOptions:
   cppcoreguidelines-avoid-magic-numbers.IgnorePowersOf2IntegerValues: 1
   readability-magic-numbers.IgnorePowersOf2IntegerValues: 1
-  cppcoreguidelines-avoid-magic-numbers.IgnoredIntegerValues: 255
-  readability-magic-numbers.IgnoredIntegerValues: 255
+  cppcoreguidelines-avoid-magic-numbers.IgnoredIntegerValues: 255;3
+  readability-magic-numbers.IgnoredIntegerValues: 255;3
   readability-identifier-length.IgnoredVariableNames: "x|y|z|w|e|i|j|k"
   readability-identifier-length.IgnoredParameterNames: "x|y|z|w|e|i|j|k"
   cppcoreguidelines-special-member-functions.AllowMissingMoveFunctions: true

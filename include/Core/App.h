@@ -34,6 +34,7 @@ private:
 public:
   static void
   Init( unsigned int width, unsigned int height, std::string title );
+  static void Init();
   static bool ShouldClose();
   static void PollEvents();
   static void ProcessInput();

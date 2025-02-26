@@ -149,7 +149,7 @@ void Shader::setVec4(
   glUniform4f( glGetUniformLocation( this->id, name.c_str() ), x, y, z, w );
 }
 
-void Shader::setTexture( const std::string& name, Texture texture ) const
+void Shader::setTexture( const std::string& name, const Texture& texture ) const
 {
   glUniform1i( glGetUniformLocation( this->id, name.c_str() ),
                (int)texture.getID() );

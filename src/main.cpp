@@ -10,23 +10,16 @@
 using namespace Axle::Core;
 using namespace Axle::Graphics;
 
-void example()
-{
-  int x = 8;  // Should not be flagged as a magic number
-  int y = 16; // Should not be flagged as a magic number
-  int z = 10; // Should be flagged as a magic number
-}
-
 void example1()
 {
 
-  App::Init( 800, 800, "Axle Engine" );
+  App::Init();
   App::SetWindowResizable( true );
 
   // Try to load a texture from file
   Texture textureTest( "res/proto/proto_wall.png" );
 
-  std::cout << "Texture loaded with ID: " << textureTest.getID() << std::endl;
+  std::cout << "Texture loaded with ID: " << textureTest.getID() << "\n";
 
   Color backgroundColor( COLOR_DARK );
 
@@ -144,6 +137,6 @@ void example2() { App::Init( 800, 800, "test" ); }
 
 int main()
 {
-  example2();
+  example1();
   return 0;
 };

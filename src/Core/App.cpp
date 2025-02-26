@@ -48,6 +48,12 @@ void App::ProcessInput()
   }
 }
 
+void App::Init()
+{
+  App::Init(
+      Utils::DEFAULT_WINDOW_WIDTH, Utils::DEFAULT_WINDOW_HEIGHT, "Axle" );
+}
+
 void App::Init( unsigned int width, unsigned int height, std::string title )
 {
 
