@@ -2,7 +2,7 @@
 #define AXLE_CONSTANTS_H
 
 namespace Axle::Utils {
-const float MAX_COLOR_VALUE = 255.0F;
-}
+const int MAX_COLOR_HEX_VALUE = 0xFFFFFF;
+} // namespace Axle::Utils
 
 #endif // AXLE_CONSTANTS_H

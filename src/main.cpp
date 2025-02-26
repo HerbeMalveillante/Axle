@@ -10,6 +10,13 @@
 using namespace Axle::Core;
 using namespace Axle::Graphics;
 
+void example()
+{
+  int x = 8;  // Should not be flagged as a magic number
+  int y = 16; // Should not be flagged as a magic number
+  int z = 10; // Should be flagged as a magic number
+}
+
 void example1()
 {
 
@@ -21,7 +28,7 @@ void example1()
 
   std::cout << "Texture loaded with ID: " << textureTest.getID() << std::endl;
 
-  Color backgroundColor( ColorPreset::COLOR_DARK );
+  Color backgroundColor( COLOR_DARK );
 
   // Shader setup
   std::string vertexShaderSource =
