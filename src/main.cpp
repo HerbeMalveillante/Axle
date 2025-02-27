@@ -138,11 +138,18 @@ void example1()
 void example2()
 {
   Mat2 mat;
-  std::cout << mat.toString() << "\n";
-  mat.at( 0, 0 ) = 2.0f;
-  std::cout << mat.toString() << "\n";
-  mat.setIdentity();
-  std::cout << mat.toString() << "\n";
+  mat.at( 0, 0 ) = 1;
+  mat.at( 0, 1 ) = 2;
+  mat.at( 1, 0 ) = 3;
+  mat.at( 1, 1 ) = 4;
+  mat.invert();
+  mat *= 3;
+  Mat2 mat2;
+  Mat2 mat3 = mat * mat2;
+
+  Mat2 mat4 = 2 * mat;
+
+  std::cout << mat3.toString() << "\n";
 }
 
 int main()

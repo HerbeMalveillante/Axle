@@ -44,17 +44,16 @@ public:
   Vec3& operator=( const Vec3& other ) = default;
 
   // Scalar operations
-  Vec3 operator+( float scalar ) const;
-  Vec3 operator-( float scalar ) const;
   Vec3 operator*( float scalar ) const;
   Vec3 operator/( float scalar ) const;
   Vec3 operator-() const;
 
   // Scalar assignment operations
-  Vec3& operator+=( float scalar );
-  Vec3& operator-=( float scalar );
   Vec3& operator*=( float scalar );
   Vec3& operator/=( float scalar );
+
+  // Left scalar operations
+  friend Vec3 operator*( float scalar, const Vec3& vec );
 
   // Vec3 operations
   Vec3 operator+( const Vec3& other ) const;

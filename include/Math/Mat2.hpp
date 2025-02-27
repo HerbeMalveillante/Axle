@@ -50,9 +50,30 @@ public:
   // ║ -> Operators
   // ╚══════════════════════════════════╝
 
-  // scalar multiplication
+  // copy assignment operator
+  Mat2& operator=( const Mat2& other ) = default;
+
+  // Scalar operators
   Mat2 operator*( float scalar ) const;
+  Mat2 operator/( float scalar ) const;
+  Mat2 operator-() const;
+
+  // Scalar assignment operators
   Mat2& operator*=( float scalar );
+  Mat2& operator/=( float scalar );
+
+  // Left scalar operators
+  friend Mat2 operator*( float scalar, const Mat2& mat );
+
+  // Matrices operators
+  Mat2 operator+( const Mat2& other ) const;
+  Mat2 operator-( const Mat2& other ) const;
+  Mat2 operator*( const Mat2& other ) const;
+
+  // Matrices assignment operators
+  Mat2& operator+=( const Mat2& other );
+  Mat2& operator-=( const Mat2& other );
+  Mat2& operator*=( const Mat2& other );
 };
 
 } // namespace Axle::Math

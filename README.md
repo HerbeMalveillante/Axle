@@ -21,3 +21,4 @@ Graphical assets used in the project are from [Kenney.nl](https://kenney.nl/).
 ## TODOS
 
 - Add a copy constructor to the Texture class
+- Add friend operator overloading to the Matrix and Vector classes to enable operations with the vector/matrix on the right side of the operator

@@ -64,16 +64,6 @@ Vec2 Vec2::dot( const Vec2& other ) const
 // ║ -> Operators
 // ╚══════════════════════════════════╝
 
-Vec2 Vec2::operator+( float scalar ) const
-{
-  return { x + scalar, y + scalar };
-}
-
-Vec2 Vec2::operator-( float scalar ) const
-{
-  return { x - scalar, y - scalar };
-}
-
 Vec2 Vec2::operator*( float scalar ) const
 {
   return { x * scalar, y * scalar };
@@ -88,20 +78,6 @@ Vec2 Vec2::operator/( float scalar ) const
 }
 
 Vec2 Vec2::operator-() const { return { -x, -y }; }
-
-Vec2& Vec2::operator+=( float scalar )
-{
-  x += scalar;
-  y += scalar;
-  return *this;
-}
-
-Vec2& Vec2::operator-=( float scalar )
-{
-  x -= scalar;
-  y -= scalar;
-  return *this;
-}
 
 Vec2& Vec2::operator*=( float scalar )
 {
@@ -119,6 +95,8 @@ Vec2& Vec2::operator/=( float scalar )
   y /= scalar;
   return *this;
 }
+
+Vec2 operator*( float scalar, const Vec2& vec ) { return vec * scalar; }
 
 Vec2 Vec2::operator+( const Vec2& other ) const
 {

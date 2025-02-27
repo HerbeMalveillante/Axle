@@ -66,16 +66,6 @@ Vec4 Vec4::dot( const Vec4& other ) const
 // ║ -> Operators
 // ╚══════════════════════════════════╝
 
-Vec4 Vec4::operator+( float scalar ) const
-{
-  return { x + scalar, y + scalar, z + scalar, w + scalar };
-}
-
-Vec4 Vec4::operator-( float scalar ) const
-{
-  return { x - scalar, y - scalar, z - scalar, w - scalar };
-}
-
 Vec4 Vec4::operator*( float scalar ) const
 {
   return { x * scalar, y * scalar, z * scalar, w * scalar };
@@ -90,24 +80,6 @@ Vec4 Vec4::operator/( float scalar ) const
 }
 
 Vec4 Vec4::operator-() const { return { -x, -y, -z, -w }; }
-
-Vec4& Vec4::operator+=( float scalar )
-{
-  x += scalar;
-  y += scalar;
-  z += scalar;
-  w += scalar;
-  return *this;
-}
-
-Vec4& Vec4::operator-=( float scalar )
-{
-  x -= scalar;
-  y -= scalar;
-  z -= scalar;
-  w -= scalar;
-  return *this;
-}
 
 Vec4& Vec4::operator*=( float scalar )
 {
@@ -129,6 +101,8 @@ Vec4& Vec4::operator/=( float scalar )
   w /= scalar;
   return *this;
 }
+
+Vec4 operator*( float scalar, const Vec4& vec ) { return vec * scalar; }
 
 Vec4 Vec4::operator+( const Vec4& other ) const
 {

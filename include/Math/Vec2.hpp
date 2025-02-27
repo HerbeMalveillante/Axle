@@ -43,17 +43,16 @@ public:
   Vec2& operator=( const Vec2& other ) = default;
 
   // Scalar operations
-  Vec2 operator+( float scalar ) const;
-  Vec2 operator-( float scalar ) const;
   Vec2 operator*( float scalar ) const;
   Vec2 operator/( float scalar ) const;
   Vec2 operator-() const;
 
   // Scalar assignment operations
-  Vec2& operator+=( float scalar );
-  Vec2& operator-=( float scalar );
   Vec2& operator*=( float scalar );
   Vec2& operator/=( float scalar );
+
+  // Left scalar operations
+  friend Vec2 operator*( float scalar, const Vec2& vec );
 
   // Vec2 operations
   Vec2 operator+( const Vec2& other ) const;

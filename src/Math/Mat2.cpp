@@ -64,9 +64,148 @@ void Mat2::transpose() { std::swap( data.at( 1 ), data.at( 2 ) ); }
 void Mat2::invert()
 {
   float det = this->det();
-  if ( det == 0.0F ) {
+  if ( det == 0 ) {
     throw Core::MatrixNonInvertibleError();
   }
+  float invDet = 1.0F / det;
+
+  std::swap( data.at( 0 ), data.at( 3 ) );
+  data.at( 1 ) = -data.at( 1 );
+  data.at( 2 ) = -data.at( 2 );
+
+  *this *= invDet;
+}
+
+Mat2 Mat2::transposed() const
+{
+  Mat2 result( *this );
+  result.transpose();
+  return result;
+}
+
+Mat2 Mat2::inverted() const
+{
+  Mat2 result( *this );
+  result.invert();
+  return result;
+}
+
+// ╔══════════════════════════════════╗
+// ║ -> Operators
+// ╚══════════════════════════════════╝
+
+Mat2 Mat2::operator*( float scalar ) const
+{
+  Mat2 result;
+  for ( unsigned int i = 0; i < 4; i++ ) {
+    result.data.at( i ) = data.at( i ) * scalar;
+  }
+  return result;
+}
+
+Mat2 Mat2::operator/( float scalar ) const
+{
+  if ( scalar == 0.0F ) {
+    throw Core::DivisionByZeroError();
+  }
+  Mat2 result;
+  for ( unsigned int i = 0; i < 4; i++ ) {
+    result.data.at( i ) = data.at( i ) / scalar;
+  }
+  return result;
+}
+
+Mat2 Mat2::operator-() const
+{
+  Mat2 result;
+  for ( unsigned int i = 0; i < 4; i++ ) {
+    result.data.at( i ) = -data.at( i );
+  }
+  return result;
+}
+
+Mat2& Mat2::operator*=( float scalar )
+{
+  for ( unsigned int i = 0; i < 4; i++ ) {
+    data.at( i ) *= scalar;
+  }
+  return *this;
+}
+
+Mat2& Mat2::operator/=( float scalar )
+{
+  if ( scalar == 0.0F ) {
+    throw Core::DivisionByZeroError();
+  }
+  for ( unsigned int i = 0; i < 4; i++ ) {
+    data.at( i ) /= scalar;
+  }
+  return *this;
+}
+
+Mat2 operator*( float scalar, const Mat2& mat ) { return mat * scalar; }
+
+Mat2 Mat2::operator+( const Mat2& other ) const
+{
+  Mat2 result;
+  for ( unsigned int i = 0; i < 4; i++ ) {
+    result.data.at( i ) = data.at( i ) + other.data.at( i );
+  }
+  return result;
+}
+
+Mat2 Mat2::operator-( const Mat2& other ) const
+{
+  Mat2 result;
+  for ( unsigned int i = 0; i < 4; i++ ) {
+    result.data.at( i ) = data.at( i ) - other.data.at( i );
+  }
+  return result;
+}
+
+Mat2 Mat2::operator*( const Mat2& other ) const
+{
+  Mat2 result;
+  result.data.at( 0 ) =
+      data.at( 0 ) * other.data.at( 0 ) + data.at( 1 ) * other.data.at( 2 );
+  result.data.at( 1 ) =
+      data.at( 0 ) * other.data.at( 1 ) + data.at( 1 ) * other.data.at( 3 );
+  result.data.at( 2 ) =
+      data.at( 2 ) * other.data.at( 0 ) + data.at( 3 ) * other.data.at( 2 );
+  result.data.at( 3 ) =
+      data.at( 2 ) * other.data.at( 1 ) + data.at( 3 ) * other.data.at( 3 );
+  return result;
+}
+
+Mat2& Mat2::operator+=( const Mat2& other )
+{
+  for ( unsigned int i = 0; i < 4; i++ ) {
+    data.at( i ) += other.data.at( i );
+  }
+  return *this;
+}
+
+Mat2& Mat2::operator-=( const Mat2& other )
+{
+  for ( unsigned int i = 0; i < 4; i++ ) {
+    data.at( i ) -= other.data.at( i );
+  }
+  return *this;
+}
+
+Mat2& Mat2::operator*=( const Mat2& other )
+{
+  Mat2 result;
+  result.data.at( 0 ) =
+      data.at( 0 ) * other.data.at( 0 ) + data.at( 1 ) * other.data.at( 2 );
+  result.data.at( 1 ) =
+      data.at( 0 ) * other.data.at( 1 ) + data.at( 1 ) * other.data.at( 3 );
+  result.data.at( 2 ) =
+      data.at( 2 ) * other.data.at( 0 ) + data.at( 3 ) * other.data.at( 2 );
+  result.data.at( 3 ) =
+      data.at( 2 ) * other.data.at( 1 ) + data.at( 3 ) * other.data.at( 3 );
+  *this = result;
+  return *this;
 }
 
 } // namespace Axle::Math

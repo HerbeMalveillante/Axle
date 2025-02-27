@@ -70,16 +70,6 @@ Vec3 Vec3::cross( const Vec3& other ) const
 // ║ -> Operators
 // ╚══════════════════════════════════╝
 
-Vec3 Vec3::operator+( float scalar ) const
-{
-  return { x + scalar, y + scalar, z + scalar };
-}
-
-Vec3 Vec3::operator-( float scalar ) const
-{
-  return { x - scalar, y - scalar, z - scalar };
-}
-
 Vec3 Vec3::operator*( float scalar ) const
 {
   return { x * scalar, y * scalar, z * scalar };
@@ -94,22 +84,6 @@ Vec3 Vec3::operator/( float scalar ) const
 }
 
 Vec3 Vec3::operator-() const { return { -x, -y, -z }; }
-
-Vec3& Vec3::operator+=( float scalar )
-{
-  x += scalar;
-  y += scalar;
-  z += scalar;
-  return *this;
-}
-
-Vec3& Vec3::operator-=( float scalar )
-{
-  x -= scalar;
-  y -= scalar;
-  z -= scalar;
-  return *this;
-}
 
 Vec3& Vec3::operator*=( float scalar )
 {
@@ -129,6 +103,8 @@ Vec3& Vec3::operator/=( float scalar )
   z /= scalar;
   return *this;
 }
+
+Vec3 operator*( float scalar, const Vec3& vec ) { return vec * scalar; }
 
 Vec3 Vec3::operator+( const Vec3& other ) const
 {

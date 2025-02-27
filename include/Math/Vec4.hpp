@@ -42,17 +42,16 @@ public:
   Vec4& operator=( const Vec4& other ) = default;
 
   // Scalar operations
-  Vec4 operator+( float scalar ) const;
-  Vec4 operator-( float scalar ) const;
   Vec4 operator*( float scalar ) const;
   Vec4 operator/( float scalar ) const;
   Vec4 operator-() const;
 
   // Scalar assignment operations
-  Vec4& operator+=( float scalar );
-  Vec4& operator-=( float scalar );
   Vec4& operator*=( float scalar );
   Vec4& operator/=( float scalar );
+
+  // Left scalar operations
+  friend Vec4 operator*( float scalar, const Vec4& vec );
 
   // Vec4 operations
   Vec4 operator+( const Vec4& other ) const;
