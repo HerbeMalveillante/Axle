@@ -1,3 +1,4 @@
-build
-.idea
-.cache/clangd/index
+build/
+.idea/
+.cache/clangd/index/
+.DS_Store
