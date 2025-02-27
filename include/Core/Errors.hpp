@@ -46,6 +46,11 @@ public:
   IndexOutOfBoundsError( int indexMin, int indexMax );
 };
 
+class MatrixNonInvertibleError : public AxleError {
+public:
+  MatrixNonInvertibleError();
+};
+
 // ╔══════════════════════════════════╗
 // ║ -> App
 // ╚══════════════════════════════════╝

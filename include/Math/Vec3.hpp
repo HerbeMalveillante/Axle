@@ -50,6 +50,12 @@ public:
   Vec3 operator/( float scalar ) const;
   Vec3 operator-() const;
 
+  // Scalar assignment operations
+  Vec3& operator+=( float scalar );
+  Vec3& operator-=( float scalar );
+  Vec3& operator*=( float scalar );
+  Vec3& operator/=( float scalar );
+
   // Vec3 operations
   Vec3 operator+( const Vec3& other ) const;
   Vec3 operator-( const Vec3& other ) const;

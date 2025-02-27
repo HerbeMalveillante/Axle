@@ -48,6 +48,11 @@ IndexOutOfBoundsError::IndexOutOfBoundsError( const int indexMin,
               "]" );
 }
 
+MatrixNonInvertibleError::MatrixNonInvertibleError()
+{
+  setMessage( "Matrix is non-invertible" );
+}
+
 // ╔══════════════════════════════════╗
 // ║ -> App
 // ╚══════════════════════════════════╝

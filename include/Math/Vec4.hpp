@@ -48,6 +48,12 @@ public:
   Vec4 operator/( float scalar ) const;
   Vec4 operator-() const;
 
+  // Scalar assignment operations
+  Vec4& operator+=( float scalar );
+  Vec4& operator-=( float scalar );
+  Vec4& operator*=( float scalar );
+  Vec4& operator/=( float scalar );
+
   // Vec4 operations
   Vec4 operator+( const Vec4& other ) const;
   Vec4 operator-( const Vec4& other ) const;

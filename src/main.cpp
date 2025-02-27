@@ -141,6 +141,8 @@ void example2()
   std::cout << mat.toString() << "\n";
   mat.at( 0, 0 ) = 2.0f;
   std::cout << mat.toString() << "\n";
+  mat.setIdentity();
+  std::cout << mat.toString() << "\n";
 }
 
 int main()

@@ -95,6 +95,41 @@ Vec3 Vec3::operator/( float scalar ) const
 
 Vec3 Vec3::operator-() const { return { -x, -y, -z }; }
 
+Vec3& Vec3::operator+=( float scalar )
+{
+  x += scalar;
+  y += scalar;
+  z += scalar;
+  return *this;
+}
+
+Vec3& Vec3::operator-=( float scalar )
+{
+  x -= scalar;
+  y -= scalar;
+  z -= scalar;
+  return *this;
+}
+
+Vec3& Vec3::operator*=( float scalar )
+{
+  x *= scalar;
+  y *= scalar;
+  z *= scalar;
+  return *this;
+}
+
+Vec3& Vec3::operator/=( float scalar )
+{
+  if ( scalar == 0 ) {
+    throw Core::DivisionByZeroError();
+  }
+  x /= scalar;
+  y /= scalar;
+  z /= scalar;
+  return *this;
+}
+
 Vec3 Vec3::operator+( const Vec3& other ) const
 {
   return { x + other.x, y + other.y, z + other.z };

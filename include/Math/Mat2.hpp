@@ -39,11 +39,20 @@ public:
   // ║ -> Operations
   // ╚══════════════════════════════════╝
 
+  [[nodiscard]] float det() const;
+  void setIdentity();
   void transpose();
   void invert();
   [[nodiscard]] Mat2 transposed() const;
   [[nodiscard]] Mat2 inverted() const;
-  [[nodiscard]] float det() const;
+
+  // ╔══════════════════════════════════╗
+  // ║ -> Operators
+  // ╚══════════════════════════════════╝
+
+  // scalar multiplication
+  Mat2 operator*( float scalar ) const;
+  Mat2& operator*=( float scalar );
 };
 
 } // namespace Axle::Math

@@ -89,6 +89,37 @@ Vec2 Vec2::operator/( float scalar ) const
 
 Vec2 Vec2::operator-() const { return { -x, -y }; }
 
+Vec2& Vec2::operator+=( float scalar )
+{
+  x += scalar;
+  y += scalar;
+  return *this;
+}
+
+Vec2& Vec2::operator-=( float scalar )
+{
+  x -= scalar;
+  y -= scalar;
+  return *this;
+}
+
+Vec2& Vec2::operator*=( float scalar )
+{
+  x *= scalar;
+  y *= scalar;
+  return *this;
+}
+
+Vec2& Vec2::operator/=( float scalar )
+{
+  if ( scalar == 0 ) {
+    throw Core::DivisionByZeroError();
+  }
+  x /= scalar;
+  y /= scalar;
+  return *this;
+}
+
 Vec2 Vec2::operator+( const Vec2& other ) const
 {
   return { x + other.x, y + other.y };

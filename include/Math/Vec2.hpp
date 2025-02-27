@@ -49,6 +49,12 @@ public:
   Vec2 operator/( float scalar ) const;
   Vec2 operator-() const;
 
+  // Scalar assignment operations
+  Vec2& operator+=( float scalar );
+  Vec2& operator-=( float scalar );
+  Vec2& operator*=( float scalar );
+  Vec2& operator/=( float scalar );
+
   // Vec2 operations
   Vec2 operator+( const Vec2& other ) const;
   Vec2 operator-( const Vec2& other ) const;
