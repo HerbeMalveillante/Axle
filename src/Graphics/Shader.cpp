@@ -2,6 +2,7 @@
 #define GLFW_INCLUDE_NONE
 
 #include "Graphics/Shader.h"
+#include "Core/Errors.h"
 #include "glad/glad.h"
 #include <array>
 #include <stdexcept>
@@ -67,8 +68,7 @@ void Shader::compile()
     glGetShaderInfoLog( vertexShaderID, 512, nullptr, infoLog.data() );
     // Clean up and throw an exception
     glDeleteShader( vertexShaderID );
-    throw std::runtime_error( "AxleError : Vertex shader compilation failed: " +
-                              std::string( infoLog.data() ) );
+    throw Core::ShaderCompilationError( "vertex", infoLog.data() );
     return;
   }
 
@@ -82,9 +82,7 @@ void Shader::compile()
     glGetShaderInfoLog( fragmentShaderID, 512, nullptr, infoLog.data() );
     // Clean up and throw an exception
     glDeleteShader( vertexShaderID );
-    throw std::runtime_error(
-        "AxleError : Fragment shader compilation failed: " +
-        std::string( infoLog.data() ) );
+    throw Core::ShaderCompilationError( "fragment", infoLog.data() );
     return;
   }
 
@@ -101,8 +99,7 @@ void Shader::compile()
   glGetProgramiv( this->id, GL_LINK_STATUS, &success );
   if ( !(bool)success ) {
     glGetProgramInfoLog( this->id, 512, nullptr, infoLog.data() );
-    throw std::runtime_error( "AxleError : Shader program linking failed: " +
-                              std::string( infoLog.data() ) );
+    throw Core::ShaderLinkingError( infoLog.data() );
     return;
   }
 
@@ -112,7 +109,7 @@ void Shader::compile()
 void Shader::use() const
 {
   if ( !this->compiled ) {
-    throw std::runtime_error( "AxleError : Shader program not compiled" );
+    throw Core::ShaderNotCompiledError();
   }
 
   glUseProgram( this->id );

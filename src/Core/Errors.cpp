@@ -22,4 +22,21 @@ InvalidParameterRangeError::InvalidParameterRangeError( const char* parameter,
               std::to_string( rangeMax ) + "]" );
 }
 
+ShaderCompilationError::ShaderCompilationError( const char* shaderType,
+                                                const char* infoLog )
+{
+  setMessage( "Shader compilation failed for " + std::string( shaderType ) +
+              " shader: " + std::string( infoLog ) );
+}
+
+ShaderLinkingError::ShaderLinkingError( const char* infoLog )
+{
+  setMessage( "Shader program linking failed: " + std::string( infoLog ) );
+}
+
+ShaderNotCompiledError::ShaderNotCompiledError()
+{
+  setMessage( "The shader program has not been compiled" );
+}
+
 } // namespace Axle::Core
