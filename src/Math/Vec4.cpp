@@ -66,22 +66,6 @@ Vec4 Vec4::dot( const Vec4& other ) const
 // ║ -> Operators
 // ╚══════════════════════════════════╝
 
-float& Vec4::operator[]( unsigned int index )
-{
-  switch ( index ) {
-    case 0:
-      return x;
-    case 1:
-      return y;
-    case 2:
-      return z;
-    case 3:
-      return w;
-    default:
-      throw Core::IndexOutOfBoundsError( 0, 3 );
-  }
-}
-
 Vec4 Vec4::operator+( float scalar ) const
 {
   return { x + scalar, y + scalar, z + scalar, w + scalar };

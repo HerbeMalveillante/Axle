@@ -64,18 +64,6 @@ Vec2 Vec2::dot( const Vec2& other ) const
 // ║ -> Operators
 // ╚══════════════════════════════════╝
 
-float& Vec2::operator[]( unsigned int index )
-{
-  switch ( index ) {
-    case 0:
-      return x;
-    case 1:
-      return y;
-    default:
-      throw Core::IndexOutOfBoundsError( 0, 1 );
-  }
-}
-
 Vec2 Vec2::operator+( float scalar ) const
 {
   return { x + scalar, y + scalar };

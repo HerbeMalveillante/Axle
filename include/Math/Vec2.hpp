@@ -39,9 +39,6 @@ public:
   // ║ -> Operators
   // ╚══════════════════════════════════╝
 
-  // subscript operator
-  float& operator[]( unsigned int index );
-
   // copy assignment operator
   Vec2& operator=( const Vec2& other ) = default;
 
