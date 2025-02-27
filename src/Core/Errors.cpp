@@ -2,16 +2,19 @@
 
 namespace Axle::Core {
 
+// ╔══════════════════════════════════╗
+// ║ -> Base class
+// ╚══════════════════════════════════╝
+
 const char* AxleError::what() const noexcept { return message.c_str(); }
 void AxleError::setMessage( const std::string& message )
 {
   this->message = message;
 }
 
-AppNotInitializedError::AppNotInitializedError()
-{
-  setMessage( "This function requires the App to be initialized" );
-}
+// ╔══════════════════════════════════╗
+// ║ -> General / Math
+// ╚══════════════════════════════════╝
 
 InvalidParameterRangeError::InvalidParameterRangeError( const char* parameter,
                                                         const float rangeMin,
@@ -21,6 +24,29 @@ InvalidParameterRangeError::InvalidParameterRangeError( const char* parameter,
               " must be in the range [" + std::to_string( rangeMin ) + ", " +
               std::to_string( rangeMax ) + "]" );
 }
+
+DivisionByZeroError::DivisionByZeroError()
+{
+  setMessage( "Division by zero is not allowed" );
+}
+
+DivisionByZeroError::DivisionByZeroError( const char* message )
+{
+  setMessage( message );
+}
+
+// ╔══════════════════════════════════╗
+// ║ -> App
+// ╚══════════════════════════════════╝
+
+AppNotInitializedError::AppNotInitializedError()
+{
+  setMessage( "This function requires the App to be initialized" );
+}
+
+// ╔══════════════════════════════════╗
+// ║ -> Shaders
+// ╚══════════════════════════════════╝
 
 ShaderCompilationError::ShaderCompilationError( const char* shaderType,
                                                 const char* infoLog )

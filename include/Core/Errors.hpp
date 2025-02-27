@@ -6,6 +6,10 @@
 
 namespace Axle::Core {
 
+// ╔══════════════════════════════════╗
+// ║ -> Base class
+// ╚══════════════════════════════════╝
+
 class AxleError : public std::exception {
 
 private:
@@ -19,10 +23,9 @@ public:
   [[nodiscard]] const char* what() const noexcept override;
 };
 
-class AppNotInitializedError : public AxleError {
-public:
-  explicit AppNotInitializedError();
-};
+// ╔══════════════════════════════════╗
+// ║ -> General / Math
+// ╚══════════════════════════════════╝
 
 class InvalidParameterRangeError : public AxleError {
 public:
@@ -30,6 +33,25 @@ public:
                               float rangeMin,
                               float rangeMax );
 };
+
+class DivisionByZeroError : public AxleError {
+public:
+  DivisionByZeroError();
+  DivisionByZeroError( const char* message );
+};
+
+// ╔══════════════════════════════════╗
+// ║ -> App
+// ╚══════════════════════════════════╝
+
+class AppNotInitializedError : public AxleError {
+public:
+  explicit AppNotInitializedError();
+};
+
+// ╔══════════════════════════════════╗
+// ║ -> Shaders
+// ╚══════════════════════════════════╝
 
 class ShaderCompilationError : public AxleError {
 public:

@@ -1,4 +1,5 @@
 #include "Math/Vec4.hpp"
+#include "Core/Errors.hpp"
 #include <cmath>
 #include <string>
 
@@ -36,6 +37,10 @@ float Vec4::length() const { return sqrt( x * x + y * y + z * z + w * w ); }
 void Vec4::normalize()
 {
   const float len = length();
+  // Check if the length is zero
+  if ( len == 0 ) {
+    throw Core::DivisionByZeroError( "Cannot normalize a null vector." );
+  }
   x /= len;
   y /= len;
   z /= len;
@@ -45,6 +50,10 @@ void Vec4::normalize()
 Vec4 Vec4::normalized() const
 {
   const float len = length();
+  // Check if the length is zero
+  if ( len == 0 ) {
+    throw Core::DivisionByZeroError( "Cannot normalize a null vector." );
+  }
   return { x / len, y / len, z / len, w / len };
 }
 
@@ -74,6 +83,9 @@ Vec4 Vec4::operator*( float scalar ) const
 
 Vec4 Vec4::operator/( float scalar ) const
 {
+  if ( scalar == 0 ) {
+    throw Core::DivisionByZeroError();
+  }
   return { x / scalar, y / scalar, z / scalar, w / scalar };
 }
 

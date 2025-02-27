@@ -1,5 +1,6 @@
 
 #include "Math/Vec2.hpp"
+#include "Core/Errors.hpp"
 #include <cmath>
 #include <string>
 
@@ -33,6 +34,12 @@ float Vec2::length() const { return sqrt( x * x + y * y ); }
 void Vec2::normalize()
 {
   const float len = length();
+
+  // Check if the length is zero
+  if ( len == 0 ) {
+    throw Core::DivisionByZeroError( "Cannot normalize a null vector." );
+  }
+
   x /= len;
   y /= len;
 }
@@ -40,6 +47,11 @@ void Vec2::normalize()
 Vec2 Vec2::normalized() const
 {
   const float len = length();
+  // Check if the length is zero
+  if ( len == 0 ) {
+    throw Core::DivisionByZeroError( "Cannot normalize a null vector." );
+  }
+
   return { x / len, y / len };
 }
 
@@ -69,6 +81,9 @@ Vec2 Vec2::operator*( float scalar ) const
 
 Vec2 Vec2::operator/( float scalar ) const
 {
+  if ( scalar == 0 ) {
+    throw Core::DivisionByZeroError();
+  }
   return { x / scalar, y / scalar };
 }
 
