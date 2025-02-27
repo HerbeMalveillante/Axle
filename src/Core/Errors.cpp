@@ -35,6 +35,19 @@ DivisionByZeroError::DivisionByZeroError( const char* message )
   setMessage( message );
 }
 
+IndexOutOfBoundsError::IndexOutOfBoundsError()
+{
+  setMessage( "Index out of bounds" );
+}
+
+IndexOutOfBoundsError::IndexOutOfBoundsError( const int indexMin,
+                                              const int indexMax )
+{
+  setMessage( "Index out of bounds. Must be in the range [" +
+              std::to_string( indexMin ) + ", " + std::to_string( indexMax ) +
+              "]" );
+}
+
 // ╔══════════════════════════════════╗
 // ║ -> App
 // ╚══════════════════════════════════╝

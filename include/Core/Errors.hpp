@@ -40,6 +40,12 @@ public:
   DivisionByZeroError( const char* message );
 };
 
+class IndexOutOfBoundsError : public AxleError {
+public:
+  IndexOutOfBoundsError();
+  IndexOutOfBoundsError( int indexMin, int indexMax );
+};
+
 // ╔══════════════════════════════════╗
 // ║ -> App
 // ╚══════════════════════════════════╝

@@ -70,6 +70,20 @@ Vec3 Vec3::cross( const Vec3& other ) const
 // ║ -> Operators
 // ╚══════════════════════════════════╝
 
+float& Vec3::operator[]( int index )
+{
+  switch ( index ) {
+    case 0:
+      return x;
+    case 1:
+      return y;
+    case 2:
+      return z;
+    default:
+      throw Core::IndexOutOfBoundsError( 0, 2 );
+  }
+}
+
 Vec3 Vec3::operator+( float scalar ) const
 {
   return { x + scalar, y + scalar, z + scalar };

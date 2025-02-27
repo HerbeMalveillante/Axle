@@ -140,9 +140,9 @@ void example2()
   Vec2 vec1( 1 );
   Vec2 half = vec1 / 2;
   Vec2 threeHalf = vec1 + half;
-  Vec2 shouldError = vec1 / 0;
+  threeHalf[0] += 10;
 
-  std::cout << "Should have errored: " << shouldError.toString() << "\n";
+  std::cout << "Should have errored: " << threeHalf.toString() << "\n";
 }
 
 int main()
