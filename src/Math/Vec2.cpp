@@ -64,7 +64,7 @@ Vec2 Vec2::dot( const Vec2& other ) const
 // ║ -> Operators
 // ╚══════════════════════════════════╝
 
-float& Vec2::operator[]( int index )
+float& Vec2::operator[]( unsigned int index )
 {
   switch ( index ) {
     case 0:

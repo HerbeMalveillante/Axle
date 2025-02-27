@@ -29,6 +29,7 @@ add_executable(Axle external/glad/src/glad.c
         src/Math/Vec2.cpp
         src/Math/Vec3.cpp
         src/Math/Vec4.cpp
+        src/Math/Mat2.cpp
         src/main.cpp
 )
 

@@ -40,7 +40,7 @@ public:
   // ╚══════════════════════════════════╝
 
   // subscript operator
-  float& operator[]( int index );
+  float& operator[]( unsigned int index );
 
   // copy assignment operator
   Vec2& operator=( const Vec2& other ) = default;

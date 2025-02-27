@@ -3,7 +3,7 @@
 #include "Core/Color.hpp"
 #include "Graphics/Shader.hpp"
 #include "Graphics/Texture.hpp"
-#include "Math/Vec2.hpp"
+#include "Math/Mat2.hpp"
 #include "Utils/Filesystem.hpp"
 #include "glad/glad.h"
 #include <iostream>
@@ -135,15 +135,7 @@ void example1()
   App::Exit();
 }
 
-void example2()
-{
-  Vec2 vec1( 1 );
-  Vec2 half = vec1 / 2;
-  Vec2 threeHalf = vec1 + half;
-  threeHalf[0] += 10;
-
-  std::cout << "Should have errored: " << threeHalf.toString() << "\n";
-}
+void example2() { Mat2 mat; }
 
 int main()
 {

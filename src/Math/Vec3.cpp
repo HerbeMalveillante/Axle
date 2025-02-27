@@ -70,7 +70,7 @@ Vec3 Vec3::cross( const Vec3& other ) const
 // ║ -> Operators
 // ╚══════════════════════════════════╝
 
-float& Vec3::operator[]( int index )
+float& Vec3::operator[]( unsigned int index )
 {
   switch ( index ) {
     case 0:
