@@ -3,6 +3,7 @@
 
 #include "Core/Errors.hpp"
 #include <array>
+#include <string>
 
 namespace Axle::Math {
 
@@ -18,12 +19,31 @@ public:
 
   Mat2();
   Mat2( float diagonal );
+  Mat2( const Mat2& other ) = default;
+  ~Mat2() = default;
 
   // ╔══════════════════════════════════╗
   // ║ -> Getters and Setters
   // ╚══════════════════════════════════╝
 
-  float operator()( unsigned int row, unsigned int col );
+  float& at( unsigned int row, unsigned int col );
+  [[nodiscard]] float at( unsigned int row, unsigned int col ) const;
+
+  // ╔══════════════════════════════════╗
+  // ║ -> Utils
+  // ╚══════════════════════════════════╝
+
+  [[nodiscard]] std::string toString() const;
+
+  // ╔══════════════════════════════════╗
+  // ║ -> Operations
+  // ╚══════════════════════════════════╝
+
+  void transpose();
+  void invert();
+  [[nodiscard]] Mat2 transposed() const;
+  [[nodiscard]] Mat2 inverted() const;
+  [[nodiscard]] float det() const;
 };
 
 } // namespace Axle::Math

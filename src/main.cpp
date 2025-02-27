@@ -135,7 +135,13 @@ void example1()
   App::Exit();
 }
 
-void example2() { Mat2 mat; }
+void example2()
+{
+  Mat2 mat;
+  std::cout << mat.toString() << "\n";
+  mat.at( 0, 0 ) = 2.0f;
+  std::cout << mat.toString() << "\n";
+}
 
 int main()
 {
