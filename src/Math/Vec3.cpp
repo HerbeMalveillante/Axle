@@ -1,0 +1,95 @@
+#include "Math/Vec3.hpp"
+#include <cmath>
+#include <string>
+
+namespace Axle::Math {
+
+// ╔══════════════════════════════════╗
+// ║ -> Constructors
+// ╚══════════════════════════════════╝
+
+Vec3::Vec3() : x( 0.0F ), y( 0.0F ), z( 0.0F ) {}
+
+Vec3::Vec3( float x, float y, float z ) : x( x ), y( y ), z( z ) {}
+
+Vec3::Vec3( float value ) : x( value ), y( value ), z( value ) {}
+
+// ╔══════════════════════════════════╗
+// ║ -> Utils
+// ╚══════════════════════════════════╝
+
+std::string Vec3::toString() const
+{
+  return "Vec3(" + std::to_string( x ) + ", " + std::to_string( y ) + ", " +
+         std::to_string( z ) + ")";
+}
+
+// ╔══════════════════════════════════╗
+// ║ -> Operations
+// ╚══════════════════════════════════╝
+
+float Vec3::length() const { return sqrt( x * x + y * y + z * z ); }
+
+void Vec3::normalize()
+{
+  const float len = length();
+  x /= len;
+  y /= len;
+  z /= len;
+}
+
+Vec3 Vec3::normalized() const
+{
+  const float len = length();
+  return { x / len, y / len, z / len };
+}
+
+Vec3 Vec3::dot( const Vec3& other ) const
+{
+  return { x * other.x, y * other.y, z * other.z };
+}
+
+Vec3 Vec3::cross( const Vec3& other ) const
+{
+  return { y * other.z - z * other.y,
+           z * other.x - x * other.z,
+           x * other.y - y * other.x };
+}
+
+// ╔══════════════════════════════════╗
+// ║ -> Operators
+// ╚══════════════════════════════════╝
+
+Vec3 Vec3::operator+( float scalar ) const
+{
+  return { x + scalar, y + scalar, z + scalar };
+}
+
+Vec3 Vec3::operator-( float scalar ) const
+{
+  return { x - scalar, y - scalar, z - scalar };
+}
+
+Vec3 Vec3::operator*( float scalar ) const
+{
+  return { x * scalar, y * scalar, z * scalar };
+}
+
+Vec3 Vec3::operator/( float scalar ) const
+{
+  return { x / scalar, y / scalar, z / scalar };
+}
+
+Vec3 Vec3::operator-() const { return { -x, -y, -z }; }
+
+Vec3 Vec3::operator+( const Vec3& other ) const
+{
+  return { x + other.x, y + other.y, z + other.z };
+}
+
+Vec3 Vec3::operator-( const Vec3& other ) const
+{
+  return { x - other.x, y - other.y, z - other.z };
+}
+
+} // namespace Axle::Math

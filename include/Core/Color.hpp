@@ -1,5 +1,5 @@
-#ifndef AXLE_COLOR_H
-#define AXLE_COLOR_H
+#ifndef AXLE_COLOR_HPP
+#define AXLE_COLOR_HPP
 
 #include <string>
 
@@ -60,4 +60,4 @@ public:
 };
 
 } // namespace Axle::Core
-#endif // AXLE_COLOR_H
+#endif // AXLE_COLOR_HPP

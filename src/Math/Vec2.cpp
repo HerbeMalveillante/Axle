@@ -1,31 +1,87 @@
+
 #include "Math/Vec2.hpp"
+#include <cmath>
+#include <string>
 
 namespace Axle::Math {
 
-Vec2::Vec2()
+// ╔══════════════════════════════════╗
+// ║ -> Constructors
+// ╚══════════════════════════════════╝
+
+Vec2::Vec2() : x( 0.0F ), y( 0.0F ) {}
+
+Vec2::Vec2( float x, float y ) : x( x ), y( y ) {}
+
+Vec2::Vec2( float value ) : x( value ), y( value ) {}
+
+// ╔══════════════════════════════════╗
+// ║ -> Utils
+// ╚══════════════════════════════════╝
+
+std::string Vec2::toString() const
 {
-  this->setComponentsCount( 2 );
-  this->setX( 0.0F );
-  this->setY( 0.0F );
+  return "Vec2(" + std::to_string( x ) + ", " + std::to_string( y ) + ")";
 }
 
-Vec2::Vec2( const float x, const float y )
+// ╔══════════════════════════════════╗
+// ║ -> Operations
+// ╚══════════════════════════════════╝
+
+float Vec2::length() const { return sqrt( x * x + y * y ); }
+
+void Vec2::normalize()
 {
-  this->setComponentsCount( 2 );
-  this->setX( x );
-  this->setY( y );
+  const float len = length();
+  x /= len;
+  y /= len;
 }
 
-Vec2::Vec2( const float value )
+Vec2 Vec2::normalized() const
 {
-  this->setComponentsCount( 2 );
-  this->setX( value );
-  this->setY( value );
+  const float len = length();
+  return { x / len, y / len };
 }
 
-void Vec2::setX( const float x ) { this->setComponent( 0, x ); }
-void Vec2::setY( const float y ) { this->setComponent( 1, y ); }
+Vec2 Vec2::dot( const Vec2& other ) const
+{
+  return { x * other.x, y * other.y };
+}
 
-[[nodiscard]] float Vec2::getX() const { return this->getComponent( 0 ); }
-[[nodiscard]] float Vec2::getY() const { return this->getComponent( 1 ); }
+// ╔══════════════════════════════════╗
+// ║ -> Operators
+// ╚══════════════════════════════════╝
+
+Vec2 Vec2::operator+( float scalar ) const
+{
+  return { x + scalar, y + scalar };
+}
+
+Vec2 Vec2::operator-( float scalar ) const
+{
+  return { x - scalar, y - scalar };
+}
+
+Vec2 Vec2::operator*( float scalar ) const
+{
+  return { x * scalar, y * scalar };
+}
+
+Vec2 Vec2::operator/( float scalar ) const
+{
+  return { x / scalar, y / scalar };
+}
+
+Vec2 Vec2::operator-() const { return { -x, -y }; }
+
+Vec2 Vec2::operator+( const Vec2& other ) const
+{
+  return { x + other.x, y + other.y };
+}
+
+Vec2 Vec2::operator-( const Vec2& other ) const
+{
+  return { x - other.x, y - other.y };
+}
+
 } // namespace Axle::Math

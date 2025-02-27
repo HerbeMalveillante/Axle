@@ -1,7 +1,7 @@
 
 
-#ifndef AXLE_WINDOW_H
-#define AXLE_WINDOW_H
+#ifndef AXLE_WINDOW_HPP
+#define AXLE_WINDOW_HPP
 
 #define GLFW_INCLUDE_NONE
 #include "Core/Color.hpp"
@@ -57,4 +57,4 @@ public:
 
 } // namespace Axle::Core
 
-#endif // AXLE_WINDOW_H
+#endif // AXLE_WINDOW_HPP

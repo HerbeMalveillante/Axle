@@ -1,5 +1,5 @@
-#ifndef AXLE_ERRORS_H
-#define AXLE_ERRORS_H
+#ifndef AXLE_ERRORS_HPP
+#define AXLE_ERRORS_HPP
 
 #include <exception>
 #include <string>
@@ -46,4 +46,4 @@ public:
   ShaderNotCompiledError();
 };
 } // namespace Axle::Core
-#endif // AXLE_ERRORS_H
+#endif // AXLE_ERRORS_HPP

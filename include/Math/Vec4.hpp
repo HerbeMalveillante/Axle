@@ -1,24 +1,23 @@
-#ifndef AXLE_VEC2_HPP
-#define AXLE_VEC2_HPP
+#ifndef AXLE_VEC4_HPP
+#define AXLE_VEC4_HPP
 
 #include <string>
 
 namespace Axle::Math {
 
-class Vec2 {
-
+class Vec4 {
 public:
-  float x, y;
+  float x, y, z, w;
 
   // ╔══════════════════════════════════╗
   // ║ -> Constructors
   // ╚══════════════════════════════════╝
 
-  Vec2();
-  Vec2( float x, float y );
-  Vec2( float value );
-  Vec2( const Vec2& other ) = default;
-  ~Vec2() = default;
+  Vec4();
+  Vec4( float x, float y, float z, float w );
+  Vec4( float value );
+  Vec4( const Vec4& other ) = default;
+  ~Vec4() = default;
 
   // ╔══════════════════════════════════╗
   // ║ -> Utils
@@ -31,29 +30,29 @@ public:
   // ╚══════════════════════════════════╝
 
   void normalize();
-  [[nodiscard]] Vec2 normalized() const;
+  [[nodiscard]] Vec4 normalized() const;
   [[nodiscard]] float length() const;
-  [[nodiscard]] Vec2 dot( const Vec2& other ) const;
+  [[nodiscard]] Vec4 dot( const Vec4& other ) const;
 
   // ╔══════════════════════════════════╗
   // ║ -> Operators
   // ╚══════════════════════════════════╝
 
   // copy assignment operator
-  Vec2& operator=( const Vec2& other ) = default;
+  Vec4& operator=( const Vec4& other ) = default;
 
   // Scalar operations
-  Vec2 operator+( float scalar ) const;
-  Vec2 operator-( float scalar ) const;
-  Vec2 operator*( float scalar ) const;
-  Vec2 operator/( float scalar ) const;
-  Vec2 operator-() const;
+  Vec4 operator+( float scalar ) const;
+  Vec4 operator-( float scalar ) const;
+  Vec4 operator*( float scalar ) const;
+  Vec4 operator/( float scalar ) const;
+  Vec4 operator-() const;
 
-  // Vec2 operations
-  Vec2 operator+( const Vec2& other ) const;
-  Vec2 operator-( const Vec2& other ) const;
+  // Vec4 operations
+  Vec4 operator+( const Vec4& other ) const;
+  Vec4 operator-( const Vec4& other ) const;
 };
 
 } // namespace Axle::Math
 
-#endif // AXLE_VEC2_HPP
+#endif // AXLE_VEC4_HPP

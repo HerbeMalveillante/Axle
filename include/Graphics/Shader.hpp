@@ -1,5 +1,5 @@
-#ifndef AXLE_SHADER_H
-#define AXLE_SHADER_H
+#ifndef AXLE_SHADER_HPP
+#define AXLE_SHADER_HPP
 
 #include "Graphics/Texture.hpp"
 #include <string>
@@ -45,4 +45,4 @@ public:
 
 } // namespace Axle::Graphics
 
-#endif // AXLE_SHADER_H
+#endif // AXLE_SHADER_HPP

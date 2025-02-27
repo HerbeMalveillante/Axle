@@ -1,5 +1,5 @@
-#ifndef AXLE_TEXTURE_H
-#define AXLE_TEXTURE_H
+#ifndef AXLE_TEXTURE_HPP
+#define AXLE_TEXTURE_HPP
 
 #include <string>
 
@@ -31,4 +31,4 @@ public:
 
 } // namespace Axle::Graphics
 
-#endif // AXLE_TEXTURE_H
+#endif // AXLE_TEXTURE_HPP

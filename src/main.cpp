@@ -3,12 +3,14 @@
 #include "Core/Color.hpp"
 #include "Graphics/Shader.hpp"
 #include "Graphics/Texture.hpp"
+#include "Math/Vec2.hpp"
 #include "Utils/Filesystem.hpp"
 #include "glad/glad.h"
 #include <iostream>
 
 using namespace Axle::Core;
 using namespace Axle::Graphics;
+using namespace Axle::Math;
 
 void example1()
 {
@@ -133,8 +135,15 @@ void example1()
   App::Exit();
 }
 
+void example2()
+{
+  Vec2 vec1( 1 );
+  Vec2 half = vec1 / 2;
+  Vec2 threeHalf = vec1 + half;
+}
+
 int main()
 {
-  example1();
+  example2();
   return 0;
 };
