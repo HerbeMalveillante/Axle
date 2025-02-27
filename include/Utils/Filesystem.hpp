@@ -5,7 +5,7 @@
 
 namespace Axle::Utils {
 
-std::string LoadTextFromFile( std::string filePath );
+std::string LoadTextFromFile( const std::string& filePath );
 
 } // namespace Axle::Utils
 

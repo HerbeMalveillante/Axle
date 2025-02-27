@@ -1,11 +1,11 @@
 
 #define GLFW_INCLUDE_NONE
 
-#include "Graphics/Shader.h"
-#include "Core/Errors.h"
+#include "Graphics/Shader.hpp"
+#include "Core/Errors.hpp"
 #include "glad/glad.h"
 #include <array>
-#include <stdexcept>
+
 #include <string>
 
 namespace Axle::Graphics {

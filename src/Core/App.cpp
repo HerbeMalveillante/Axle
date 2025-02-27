@@ -1,9 +1,9 @@
 #define GLFW_INCLUDE_NONE
 
-#include "Core/App.h"
-#include "Core/Errors.h"
+#include "Core/App.hpp"
+#include "Core/Errors.hpp"
 #include "GLFW/glfw3.h"
-#include "Utils/Constants.h"
+#include "Utils/Constants.hpp"
 #include "glad/glad.h"
 #include <iostream>
 

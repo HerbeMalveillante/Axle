@@ -1,6 +1,6 @@
-#include "Core/Color.h"
-#include "Core/Errors.h"
-#include "Utils/Constants.h"
+#include "Core/Color.hpp"
+#include "Core/Errors.hpp"
+#include "Utils/Constants.hpp"
 
 namespace Axle::Core {
 

@@ -1,9 +1,9 @@
 
-#include "Core/App.h"
-#include "Core/Color.h"
-#include "Graphics/Shader.h"
-#include "Graphics/Texture.h"
-#include "Utils/Filesystem.h"
+#include "Core/App.hpp"
+#include "Core/Color.hpp"
+#include "Graphics/Shader.hpp"
+#include "Graphics/Texture.hpp"
+#include "Utils/Filesystem.hpp"
 #include "glad/glad.h"
 #include <iostream>
 
@@ -132,8 +132,6 @@ void example1()
 
   App::Exit();
 }
-
-void example2() { App::Init( 800, 800, "test" ); }
 
 int main()
 {

@@ -1,7 +1,7 @@
 #ifndef AXLE_SHADER_H
 #define AXLE_SHADER_H
 
-#include "Graphics/Texture.h"
+#include "Graphics/Texture.hpp"
 #include <string>
 
 namespace Axle::Graphics {

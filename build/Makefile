@@ -394,6 +394,30 @@ src/Math/Matrix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Math/Matrix.cpp.s
 .PHONY : src/Math/Matrix.cpp.s
 
+src/Math/Vec2.o: src/Math/Vec2.cpp.o
+.PHONY : src/Math/Vec2.o
+
+# target to build an object file
+src/Math/Vec2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Math/Vec2.cpp.o
+.PHONY : src/Math/Vec2.cpp.o
+
+src/Math/Vec2.i: src/Math/Vec2.cpp.i
+.PHONY : src/Math/Vec2.i
+
+# target to preprocess a source file
+src/Math/Vec2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Math/Vec2.cpp.i
+.PHONY : src/Math/Vec2.cpp.i
+
+src/Math/Vec2.s: src/Math/Vec2.cpp.s
+.PHONY : src/Math/Vec2.s
+
+# target to generate assembly for a file
+src/Math/Vec2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Axle.dir/build.make CMakeFiles/Axle.dir/src/Math/Vec2.cpp.s
+.PHONY : src/Math/Vec2.cpp.s
+
 src/Math/Vector.o: src/Math/Vector.cpp.o
 .PHONY : src/Math/Vector.o
 
@@ -504,6 +528,9 @@ help:
 	@echo "... src/Math/Matrix.o"
 	@echo "... src/Math/Matrix.i"
 	@echo "... src/Math/Matrix.s"
+	@echo "... src/Math/Vec2.o"
+	@echo "... src/Math/Vec2.i"
+	@echo "... src/Math/Vec2.s"
 	@echo "... src/Math/Vector.o"
 	@echo "... src/Math/Vector.i"
 	@echo "... src/Math/Vector.s"

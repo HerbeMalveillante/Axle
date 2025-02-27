@@ -1,7 +1,7 @@
 CMakeFiles/Axle.dir/src/Core/App.cpp.o: \
   /Users/herbemalveillante/Code/Axle/src/Core/App.cpp \
-  /Users/herbemalveillante/Code/Axle/include/Core/App.h \
-  /Users/herbemalveillante/Code/Axle/include/Core/Color.h \
+  /Users/herbemalveillante/Code/Axle/include/Core/App.hpp \
+  /Users/herbemalveillante/Code/Axle/include/Core/Color.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -451,7 +451,7 @@ CMakeFiles/Axle.dir/src/Core/App.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__iterator/reverse_access.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__iterator/size.h \
   /Users/herbemalveillante/Code/Axle/external/glfw/include/GLFW/glfw3.h \
-  /Users/herbemalveillante/Code/Axle/include/Core/Errors.h \
+  /Users/herbemalveillante/Code/Axle/include/Core/Errors.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__exception/exception_ptr.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__exception/operations.h \
@@ -460,7 +460,7 @@ CMakeFiles/Axle.dir/src/Core/App.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__exception/nested_exception.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_polymorphic.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__exception/terminate.h \
-  /Users/herbemalveillante/Code/Axle/include/Utils/Constants.h \
+  /Users/herbemalveillante/Code/Axle/include/Utils/Constants.hpp \
   /Users/herbemalveillante/Code/Axle/external/glad/include/glad/glad.h \
   /Users/herbemalveillante/Code/Axle/external/glad/include/KHR/khrplatform.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/iostream \

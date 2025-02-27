@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Axle.dir/src/Graphics/Texture.cpp.o.d"
   "CMakeFiles/Axle.dir/src/Math/Matrix.cpp.o"
   "CMakeFiles/Axle.dir/src/Math/Matrix.cpp.o.d"
+  "CMakeFiles/Axle.dir/src/Math/Vec2.cpp.o"
+  "CMakeFiles/Axle.dir/src/Math/Vec2.cpp.o.d"
   "CMakeFiles/Axle.dir/src/Math/Vector.cpp.o"
   "CMakeFiles/Axle.dir/src/Math/Vector.cpp.o.d"
   "CMakeFiles/Axle.dir/src/Utils/Filesystem.cpp.o"

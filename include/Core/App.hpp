@@ -4,7 +4,7 @@
 #define AXLE_WINDOW_H
 
 #define GLFW_INCLUDE_NONE
-#include "Core/Color.h"
+#include "Core/Color.hpp"
 #include "GLFW/glfw3.h"
 #include <string>
 

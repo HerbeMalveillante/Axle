@@ -1,4 +1,4 @@
-#include "Core/Errors.h"
+#include "Core/Errors.hpp"
 
 namespace Axle::Core {
 

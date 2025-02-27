@@ -1,7 +1,7 @@
 CMakeFiles/Axle.dir/src/main.cpp.o: \
   /Users/herbemalveillante/Code/Axle/src/main.cpp \
-  /Users/herbemalveillante/Code/Axle/include/Core/App.h \
-  /Users/herbemalveillante/Code/Axle/include/Core/Color.h \
+  /Users/herbemalveillante/Code/Axle/include/Core/App.hpp \
+  /Users/herbemalveillante/Code/Axle/include/Core/Color.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -451,9 +451,9 @@ CMakeFiles/Axle.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__iterator/reverse_access.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__iterator/size.h \
   /Users/herbemalveillante/Code/Axle/external/glfw/include/GLFW/glfw3.h \
-  /Users/herbemalveillante/Code/Axle/include/Graphics/Shader.h \
-  /Users/herbemalveillante/Code/Axle/include/Graphics/Texture.h \
-  /Users/herbemalveillante/Code/Axle/include/Utils/Filesystem.h \
+  /Users/herbemalveillante/Code/Axle/include/Graphics/Shader.hpp \
+  /Users/herbemalveillante/Code/Axle/include/Graphics/Texture.hpp \
+  /Users/herbemalveillante/Code/Axle/include/Utils/Filesystem.hpp \
   /Users/herbemalveillante/Code/Axle/external/glad/include/glad/glad.h \
   /Users/herbemalveillante/Code/Axle/external/glad/include/KHR/khrplatform.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/iostream \
