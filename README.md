@@ -21,3 +21,6 @@ Graphical assets used in the project are from [Kenney.nl](https://kenney.nl/).
 ## TODOS
 
 - Add a copy constructor to the Texture class
+- Mat3 and Mat4 classes
+- Add transformations to mat4
+- Add constructors to vec4 from a vec3, and the other way around

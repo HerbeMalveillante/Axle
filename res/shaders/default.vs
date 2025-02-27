@@ -10,7 +10,7 @@ out vec2 texCoord;
 
 void main()
 {
-    gl_Position = vec4(vp, 1.0);
+    gl_Position = vec4(vp, 1.0) + vec4(offsetX, 0.0, 0.0, 0.0);
     vertexColor = vc;
     texCoord = vt;
 }
