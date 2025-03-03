@@ -19,6 +19,8 @@ include_directories(external/glad/include)
 # Add stb
 include_directories(external/stb/include)
 
+
+
 add_executable(Axle external/glad/src/glad.c
         src/Core/App.cpp
         src/Core/Color.cpp
@@ -26,10 +28,6 @@ add_executable(Axle external/glad/src/glad.c
         src/Graphics/Shader.cpp
         src/Graphics/Texture.cpp
         src/Utils/Filesystem.cpp
-        src/Math/Vec2.cpp
-        src/Math/Vec3.cpp
-        src/Math/Vec4.cpp
-        src/Math/Mat2.cpp
         src/main.cpp
 )
 

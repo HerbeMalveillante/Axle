@@ -3,7 +3,7 @@
 #include "Core/Color.hpp"
 #include "Graphics/Shader.hpp"
 #include "Graphics/Texture.hpp"
-#include "Math/Mat2.hpp"
+#include "Math/Matrix.hpp"
 #include "Utils/Filesystem.hpp"
 #include "glad/glad.h"
 
@@ -143,23 +143,17 @@ void example1()
 
 void example2()
 {
-  Mat2 mat;
-  mat.at( 0, 0 ) = 1;
-  mat.at( 0, 1 ) = 2;
-  mat.at( 1, 0 ) = 3;
-  mat.at( 1, 1 ) = 4;
-  mat.invert();
-  mat *= 3;
-  Mat2 mat2;
-  Mat2 mat3 = mat * mat2;
-
-  Mat2 mat4 = 2 * mat;
-
-  std::cout << mat3.toString() << "\n";
+  Mat4 mat = { { 1, 1, 1, -1, 1, 1, -1, 1, 1, -1, 1, 1, -1, 1, 1, 1 } };
+  Mat3 mat3 = { { 4, 6, 1, 3, 2, 5, 8, 5, 9 } };
+  std::cout << mat.det() << "\n";
+  std::cout << mat.toString() << "\n";
+  Mat4 matInvert = mat.invert();
+  std::cout << matInvert.toString() << "\n";
+  std::cout << mat3.invert().toString() << "\n";
 }
 
 int main()
 {
-  example1();
+  example2();
   return 0;
 };
